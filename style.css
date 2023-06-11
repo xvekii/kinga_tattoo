@@ -1,8 +1,19 @@
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('fonts/RobotoMono-Bold.woff2') format('woff2'),
+       url('fonts/RobotoMono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'Roboto Mono';
   margin: 0;
   background-color: #C8C8C9;
 }
