@@ -4,4 +4,13 @@
 
 body {
   margin: 0;
+  background-color: #C8C8C9;
+}
+
+/* .container {
+ 
+} */
+
+.small-logo {
+  width: 6.375em;
 }
