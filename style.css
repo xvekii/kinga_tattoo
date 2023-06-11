@@ -21,10 +21,14 @@ body {
 img {
   max-width: 100%;
 }
-/* .container {
- 
-} */
+
+.container {
+  width: 92%; 
+  max-width: 1300px;
+  margin: 0 auto;
+  border: solid black 1px;
+}
 
 .small-logo {
-  width: 6.375em;
+  width: 6em;
 }
