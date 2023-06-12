@@ -53,6 +53,7 @@ header {
   gap: 3em;
   padding: 0;
   margin: 0;
+  
 }
 
 /* .nav__item {
@@ -70,4 +71,5 @@ header {
 
 .small-logo {
   width: 6em;
+  min-width: 3em;
 }
