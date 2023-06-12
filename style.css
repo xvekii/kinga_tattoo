@@ -48,7 +48,7 @@ header {
 .nav__list {
   display: flex;
   list-style-type: none;
-  gap: 3em;
+  gap: 2em;
   padding: 0;
   margin: 0 0 0 2em;
 }
@@ -68,9 +68,11 @@ header {
 }
 
 .main-logo {
-  width: 27.500em;
+  width: 30.500em;
   display: flex;
   flex-direction: column;
   gap: 2em;
+  padding: 0 1em 1em 1em;
+  
   /* border: 1px solid green; */
 }
