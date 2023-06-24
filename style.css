@@ -132,7 +132,11 @@ header {
   margin-top: 70px; 
 }
 
-
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
 
 
 /* don't forget to add #gallery and fixed menu! */
