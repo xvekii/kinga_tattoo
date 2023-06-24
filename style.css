@@ -90,7 +90,7 @@ header {
 .button-one {
   background: transparent;
   border-radius: .5rem;
-  border: 2px solid black;
+  border: none;
   display: flex;
   align-items: center;
   padding: 0;
@@ -136,9 +136,10 @@ header {
   margin-top: 70px; 
 }
 
-@media (max-width: 1128px) {
+/* was 1128, 100% */
+@media (min-width: 1300px) {
   .container {
-    width: 100%;
+    width: 92%;
   }
 }
 
@@ -174,4 +175,5 @@ header {
 
 /* don't forget to add #gallery and fixed menu! 
 main logo padding 100px to em?
+after click on menu to return button animation!!!
 */
