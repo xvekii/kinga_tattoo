@@ -1,5 +1,5 @@
 const buttonOne = document.querySelector(".button-one");
-const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".nav__menu");
 
 buttonOne.addEventListener("click", () => {
   const isOpened = buttonOne.getAttribute("aria-expanded"); 
@@ -12,7 +12,7 @@ buttonOne.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click", () => {
   buttonOne.classList.remove("active");
   navMenu.classList.remove("active");
 }));
