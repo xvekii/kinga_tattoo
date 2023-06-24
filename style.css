@@ -88,7 +88,7 @@ header {
 }
 
 .button-one {
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 
