@@ -76,7 +76,8 @@ header {
 }
 
 .main-logo {
-  width: 30.500em;
+  max-width: 30.500em;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2em;
