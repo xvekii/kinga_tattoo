@@ -89,9 +89,9 @@ header {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 0;
+  width: 38px;
+  height: 6px;
+  margin: 8px 0;
   transition: all 0.3s ease;
   background-color: black;
 }
@@ -122,11 +122,11 @@ header {
   }
   
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(14px) rotate(45deg);
   }
   
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-14px) rotate(-45deg);
   }
 
   .nav__menu {
