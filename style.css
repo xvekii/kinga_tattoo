@@ -45,7 +45,7 @@ header {
   /* border: 1px solid green; */
 }
 
-.nav__list {
+.nav__menu {
   display: flex;
   list-style-type: none;
   gap: 2em;
