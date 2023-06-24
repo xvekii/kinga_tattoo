@@ -90,3 +90,11 @@ header {
   display: none;
   cursor: pointer;
 }
+
+.button-one .line {
+  transition: 
+    d 200ms ease-in 200ms,
+    rotate 200ms ease-in,
+    opacity 0ms 200ms;
+  transform-origin: center;
+}
