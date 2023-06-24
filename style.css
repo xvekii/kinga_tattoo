@@ -54,13 +54,18 @@ header {
   margin: 0 0 0 2em;
 }
 
-.nav__item a {
+.nav__link {
   text-decoration: none;
   color: #191B27;
   font-size: 1.2rem;
   /* line-height: 2.638em; */
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
   /* drop-shadow(offset-x offset-y blur-radius color) */
+}
+
+.nav__link:hover, 
+.nav__link:focus {
+  opacity: .65;
 }
 
 .small-logo {
@@ -122,3 +127,12 @@ header {
 .button-one[aria-expanded="true"] .bottom {
   rotate: -45deg;
 }
+
+#gallery{
+  margin-top: 70px; 
+}
+
+
+
+
+/* don't forget to add #gallery and fixed menu! */
