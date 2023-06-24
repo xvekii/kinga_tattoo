@@ -135,11 +135,11 @@ header {
   margin-top: 70px; 
 }
 
-@media (max-width: 1128px) {
+/* @media (max-width: 1128px) {
   .container {
     width: 100%;
   }
-}
+} */
 
 @media (max-width: 600px) {
   .button-one {
@@ -149,7 +149,7 @@ header {
   .nav__menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 100px;
     gap: 0;
     flex-direction: column;
     width: 100%;
@@ -164,10 +164,13 @@ header {
  
   .nav__menu.active {
     left: 0;
-    background-color: pink;
+    background-color: #FFFFFF;
     margin: 0 auto;
     padding: 0;
+    opacity: 0.9;
   }
 }
 
-/* don't forget to add #gallery and fixed menu! */
+/* don't forget to add #gallery and fixed menu! 
+main logo padding 100px to em?
+*/
