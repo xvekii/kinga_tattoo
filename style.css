@@ -135,11 +135,11 @@ header {
   margin-top: 70px; 
 }
 
-/* @media (max-width: 1128px) {
+@media (max-width: 1128px) {
   .container {
     width: 100%;
   }
-} */
+}
 
 @media (max-width: 600px) {
   .button-one {
