@@ -101,8 +101,6 @@ header {
   cursor: pointer;
 }
 
-
-
 #gallery{
   margin-top: 70px; 
 }
@@ -115,10 +113,22 @@ header {
 }
 
 @media (max-width: 600px) {
-  .button-one {
-    display: flex; 
+  .hamburger {
+    display: block; 
   }
   
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   .nav__menu {
     position: fixed;
     left: -100%;
