@@ -132,11 +132,39 @@ header {
   margin-top: 70px; 
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1128px) {
   .container {
     width: 100%;
   }
 }
 
+@media (max-width: 600px) {
+  .button-one {
+    display: flex; 
+  }
+  
+  .nav__menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .nav__item {
+    margin: 16px;
+  }
+ 
+  .nav__menu.active {
+    left: 0;
+    background-color: pink;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 
 /* don't forget to add #gallery and fixed menu! */
