@@ -102,9 +102,13 @@ header {
 }
 
 .cta-btns-container-main {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 210px;
   height: 129px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .cta-btn {
