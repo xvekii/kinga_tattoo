@@ -130,6 +130,17 @@ header {
   letter-spacing: 1.14px;
 }
 
+.cta-btn--contact {
+  border-radius: 8px;
+  background: #FFF;
+}
+
+.cta-btn--gallery {
+  border-radius: 8px;
+  background: #000;
+  color: #FFF;
+}
+
 #gallery{
   margin-top: 70px; 
 }
