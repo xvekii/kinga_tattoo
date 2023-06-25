@@ -23,16 +23,28 @@ img {
   max-width: 100%;
 }
 
+.gallery--flex {
+  display: flex;
+  gap: .5em;
+}
+
 .gallery {
   padding-top: 7em;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .gallery-img-container {
+  
   max-width: 20%;
+  
+
 }
 
 .gallery-img {
   max-width: 100%;
+  
 }
 
 header {
