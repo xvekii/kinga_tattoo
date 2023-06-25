@@ -102,8 +102,7 @@ header {
 }
 
 .cta-btns-container-main {
-  /* display: none; */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 210px;
@@ -112,8 +111,7 @@ header {
 }
 
 .cta-btn {
-  /* display: none; */
-  display: flex;
+  display: none;
   width: 210px;
   height: 46px;
   justify-content: center;
@@ -153,6 +151,12 @@ header {
 }
 
 @media (max-width: 600px) {
+
+  .cta-btn,
+  .cta-btns-container-main {
+    display: flex;
+  }
+
   .hamburger {
     display: block; 
   }
