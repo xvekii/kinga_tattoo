@@ -23,6 +23,18 @@ img {
   max-width: 100%;
 }
 
+.gallery {
+  padding-top: 7em;
+}
+
+.gallery-img-container {
+  max-width: 20%;
+}
+
+.gallery-img {
+  max-width: 100%;
+}
+
 header {
   position: fixed;
   padding: 1em 1em 0 1em;
