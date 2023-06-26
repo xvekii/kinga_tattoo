@@ -51,7 +51,7 @@ header {
 }
 
 .container {
-  width: 92%; 
+  width: 96%; 
   max-width: 1200px;
   margin: 0 auto;
   /* border: solid black 1px; */
@@ -88,7 +88,8 @@ header {
 
 .nav__link:hover, 
 .nav__link:focus {
-  opacity: .65;
+  opacity: .85;
+  text-decoration: underline;
 }
 
 .small-logo {
@@ -117,9 +118,9 @@ header {
 
 .bar {
   display: block;
-  width: 38px;
-  height: 6px;
-  margin: 8px 0;
+  width: 32px;
+  height: 3px;
+  margin: 6px 0;
   transition: all 0.3s ease;
   background-color: black;
 }
@@ -207,10 +208,6 @@ h2 {
     display: flex;
   }
 
-  
-    
-
-
   .hamburger {
     display: block; 
   }
@@ -220,11 +217,11 @@ h2 {
   }
   
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
   }
   
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-14px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
   }
 
   .nav__menu {
