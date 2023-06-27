@@ -12,7 +12,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   position: relative;
   font-family: 'Roboto Mono', sans-serif;
@@ -125,21 +124,18 @@ header {
   display: none;
   cursor: pointer;
   /* changed */
-  
-
 }
 
 .bar {
   display: block;
   width: 32px;
-  height: 3px;
-  margin: 6px 0;
+  height: 5px;
+  margin: 5px 0;
   transition: all 0.3s ease;
-  background-color: white;
+  background-color: black;
   /* changed */
-  
+  border: 1px solid white;
 }
-
 
 .cta-btns-container-main {
   display: none;
@@ -185,7 +181,6 @@ header {
 
 /* .gallery-h2 {
   
-  
 } */
 
 h2 {
@@ -228,11 +223,11 @@ h2 {
   }
   
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
   
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
   }
 
   .nav__menu {
