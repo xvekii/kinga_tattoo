@@ -41,7 +41,6 @@ img {
   width: 230px;
   max-width: 100%;
   border: 2px solid #C8C8C9;
-  
 }
 
 header {
@@ -92,7 +91,9 @@ header {
   text-decoration: underline;
 }
 
-.small-logo {
+.small-logo-container {
+  display: flex;
+  align-items: center;
   width: 4em;
   min-width: 3.5em;
 }
