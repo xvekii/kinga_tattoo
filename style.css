@@ -96,6 +96,9 @@ header {
   align-items: center;
   width: 4em;
   min-width: 3.5em;
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
 }
 
 .main-logo {
