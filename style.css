@@ -127,11 +127,15 @@ header {
   margin: 6px 0;
   transition: all 0.3s ease;
   background-color: black;
+  
 }
+
 
 .hamburger {
   display: none;
   cursor: pointer;
+  
+  
 }
 
 .cta-btns-container-main {
