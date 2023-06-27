@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   position: relative;
   font-family: 'Roboto Mono', sans-serif;
@@ -120,23 +121,25 @@ header {
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(200,200,201,1) 89%);
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  /* changed */
+  
+
+}
+
 .bar {
   display: block;
   width: 32px;
   height: 3px;
   margin: 6px 0;
   transition: all 0.3s ease;
-  background-color: black;
+  background-color: white;
+  /* changed */
   
 }
 
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  
-  
-}
 
 .cta-btns-container-main {
   display: none;
@@ -242,6 +245,7 @@ h2 {
     align-items: center;
     text-align: center;
     transition: 0.3s;
+    mix-blend-mode: difference;
   }
   
   .nav__item {
