@@ -45,9 +45,20 @@ img {
 
 header {
   position: fixed;
-  padding: 1em 1em 0 1em;
+  padding: 1em .1em 0 .1em;
   width: 100%;
 }
+
+/* test header */
+/* header {
+  position: fixed;
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  background: rgb(255 255 255 / 64%);
+  width: 100%;
+} */
 
 .container {
   width: 96%; 
