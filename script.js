@@ -11,15 +11,20 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   navMenu.classList.remove("active");
 }));
 
-let prevScrollPos = window.scrollY;
-window.onscroll = function() {
-  let currentScrollPos = window.scrollY;
-  if ((prevScrollPos > currentScrollPos) & !(prevScrollPos > 50)) {
-    document.querySelector(".small-logo-container").style.opacity = "1";
-    document.querySelector(".small-logo-container").style.pointerEvents = "all";
-  } else {
-    document.querySelector(".small-logo-container").style.opacity = "0";
-    document.querySelector(".small-logo-container").style.pointerEvents = "none";
-  }
-  prevScrollPos = currentScrollPos;
-}
+
+
+
+// small logo disappear on scroll down ==> remove CSS
+
+// let prevScrollPos = window.scrollY;
+// window.onscroll = function() {
+//   let currentScrollPos = window.scrollY;
+//   if ((prevScrollPos > currentScrollPos) & !(prevScrollPos > 100)) {
+//     document.querySelector(".small-logo-container").style.opacity = "1";
+//     document.querySelector(".small-logo-container").style.pointerEvents = "all";
+//   } else {
+//     document.querySelector(".small-logo-container").style.opacity = "0";
+//     document.querySelector(".small-logo-container").style.pointerEvents = "none";
+//   }
+//   prevScrollPos = currentScrollPos;
+// }
