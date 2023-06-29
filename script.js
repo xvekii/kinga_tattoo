@@ -11,8 +11,21 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   navMenu.classList.remove("active");
 }));
 
+const modal = document.querySelector("#modal");
+const openModal = document.querySelectorAll(".gallery-img");
+const closeModal = document.querySelector(".close-modal");
 
 
+openModal.forEach(function(e) {
+  e.addEventListener("click", () => {
+    modal.showModal();
+  });
+});
+  
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
 
 // small logo disappear on scroll down ==> remove CSS
 
