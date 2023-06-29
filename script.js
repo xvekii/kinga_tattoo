@@ -25,6 +25,11 @@ closeModal.addEventListener("click", () => {
   modal.close();
 });
 
+modal.addEventListener("click", (e) => {
+  if (e.target.nodeName === "DIALOG") {
+    modal.close();
+  }
+})
 // small logo disappear on scroll down ==> remove CSS
 
 // let prevScrollPos = window.scrollY;
