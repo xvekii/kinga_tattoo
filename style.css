@@ -187,13 +187,20 @@ header {
   color: #FFF;
 }
 
-.gallery{
-  margin-top: 70px; 
+#modal {
+  padding: 1em;
+  width: 76%;
+  /* height: 60vh; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .gallery-h2 {
-  
-} */
+#current-image {
+  max-width: 100%;
+  border: 2px solid #C8C8C9;
+}
 
 h2 {
   margin: 0;
