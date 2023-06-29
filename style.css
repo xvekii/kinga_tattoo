@@ -203,18 +203,29 @@ header {
 }
 
 .close-modal {
-  position: absolute;
   bottom: inherit; 
-  border-radius: 24px;
-  border: none;
-  width: 1.9rem;
   font-weight: 900;
   font-size: x-large; 
-  background-color: #C8C8C9;
-  cursor: pointer;
-  background: none;
-  color: white;
   bottom: 30px;
+}
+
+.close-modal,
+.gallery-btn {
+  position: absolute;
+  background: none;
+  border: none; 
+  font-size: 2rem;
+  z-index: 2;
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  padding: 0 .5rem;
+  border-radius: .25rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.gallery-btn {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #current-image {
