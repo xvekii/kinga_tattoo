@@ -191,10 +191,14 @@ header {
   padding: 1em;
   width: 40%;
   /* height: 60vh; */
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#modal::backdrop {
+  background: rgb(113, 115, 19);
+  opacity: 1;
 }
 
 #current-image {
