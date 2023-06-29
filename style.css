@@ -30,7 +30,7 @@ img {
   gap: .5em;
 }
 
-.gallery-section {
+#gallery {
   /* padding-top: 7em; */
   display: flex;
   align-items: center;
