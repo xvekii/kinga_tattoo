@@ -195,7 +195,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: black;
-
 }
 
 #modal::backdrop {
@@ -215,6 +214,7 @@ header {
   cursor: pointer;
   background: none;
   color: white;
+  bottom: 30px;
 }
 
 #current-image {
@@ -236,7 +236,6 @@ h2 {
   }
 
   .small-logo {
-    width: 5em;
     min-width: 5.5em;
   }
   
