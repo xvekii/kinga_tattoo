@@ -194,7 +194,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #C8C8C9;
+  background-color: black;
 
 }
 
@@ -205,20 +205,22 @@ header {
 
 .close-modal {
   position: absolute;
-  top: inherit;
-  right: inherit;  
+  bottom: inherit; 
   border-radius: 24px;
   border: none;
   width: 1.9rem;
   font-weight: 900;
   font-size: x-large; 
   background-color: #C8C8C9;
-  
+  cursor: pointer;
+  background: none;
+  color: white;
 }
 
 #current-image {
   max-width: 100%;
-  border: 2px solid #C8C8C9;
+  width: 100%;
+  /* border: 2px solid #C8C8C9; */
 }
 
 h2 {
@@ -232,6 +234,7 @@ h2 {
   .container {
     width: 92%;
   }
+
   .small-logo {
     width: 5em;
     min-width: 5.5em;
@@ -254,7 +257,7 @@ h2 {
 
   #modal[open] {
     padding: 1.5em;
-    width: 90%;
+    width: 80%;
   }
   
 
