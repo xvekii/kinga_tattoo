@@ -15,14 +15,12 @@ const modal = document.querySelector("#modal");
 const openModal = document.querySelectorAll(".gallery-img");
 const closeModal = document.querySelector(".close-modal");
 
-
 openModal.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
   });
 });
   
-
 closeModal.addEventListener("click", () => {
   modal.close();
 });
