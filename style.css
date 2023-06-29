@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 body {
   position: relative;
   font-family: 'Roboto Mono', sans-serif;
@@ -203,15 +210,12 @@ header {
   opacity: .7;
 }
 
-.close-modal{
-  bottom: inherit; 
-  font-weight: 900;
-  font-size: x-large; 
-  bottom: 30px;
-  padding: 4px 11px;
-
-  display: flex;
-
+.close-modal {
+  font-weight: 200;
+  font-size:xx-large !important; 
+  /* bottom: 30px; */
+  padding: 0px 11px;
+  padding-bottom: 3px;
 }
 
 .close-modal,
@@ -223,16 +227,26 @@ header {
   z-index: 2;
   color: rgba(255, 255, 255, .5);
   cursor: pointer;
-
   border-radius: .25rem;
   background-color: rgba(0, 0, 0, .1);
-
 }
 
 .gallery-btn {
   top: 50%;
   transform: translateY(-50%);
   padding: 0 .5rem;
+}
+
+.gallery-btn.prev {
+  left: 1rem;
+}
+
+.gallery-btn.next {
+  right: 1rem;
+}
+
+.close-modal {
+  bottom: 1.4rem;
 }
 
 #current-image {
