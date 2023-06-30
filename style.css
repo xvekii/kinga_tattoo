@@ -28,7 +28,6 @@ body {
 }
 
 .main-wrapper {
-  border: 1px solid black;
   min-height: 100vh;
   min-height: 100dvh;
 }

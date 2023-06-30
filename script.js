@@ -12,12 +12,27 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 }));
 
 const modal = document.querySelector("#modal");
+
+
+
 const openModal = document.querySelectorAll(".gallery-img");
 const closeModal = document.querySelector(".close-modal");
 
+
+let currentImage = document.getElementById("#current-image");
 openModal.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
+    
+    // for (let i = 1; i <= 20; i++) {
+    //   let thumb = document.createElement("img");
+    //   thumb.src = "images/image" + i + ".jpg";
+    //   thumb.alt = "Image " + "i";
+    //   currentImage.src = this.src;
+    //   currentImage.alt = this.alt;
+
+    // }
+    
   });
 });
   
@@ -31,9 +46,19 @@ modal.addEventListener("click", (e) => {
   }
 });
 
+// let currentImage = document.getElementById("#current-image");
+
+
+// const buttons = document.querySelector("[data-button]");
+// buttons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     currentImage.src = this.src;
+//     currentImage.alt = this.alt;
+//   });
+// });
 
 // let imageThumbs = document.getElementById("gallery-img");
-// let currentImage = document.getElementById("#current-image");
+
 
 // for (let i = 1; i <= 20; i++) {
 //   let thumb = document.createElement("img");
