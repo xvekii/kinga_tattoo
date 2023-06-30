@@ -30,6 +30,7 @@ body {
 .main-wrapper {
   border: 1px solid black;
   height: 100vh;
+  height: 100dvh;
 }
 
 img {
