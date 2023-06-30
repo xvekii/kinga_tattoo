@@ -19,10 +19,12 @@ const openModal = document.querySelectorAll(".gallery-img");
 const closeModal = document.querySelector(".close-modal");
 
 
-let currentImage = document.getElementById("#current-image");
+
 openModal.forEach(function(e) {
   e.addEventListener("click", () => {
+    
     modal.showModal();
+    imgChange();
     
     // for (let i = 1; i <= 20; i++) {
     //   let thumb = document.createElement("img");
@@ -45,6 +47,15 @@ modal.addEventListener("click", (e) => {
     modal.close();
   }
 });
+
+function imgChange() {
+  let currentImage = document.getElementById("current-image");
+  currentImage.src = "images/image2.jpg";
+
+}
+
+
+    
 
 // let currentImage = document.getElementById("#current-image");
 
