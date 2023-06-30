@@ -27,6 +27,11 @@ body {
   /* line-height: 1.5; */
 }
 
+.main-wrapper {
+  border: 1px solid black;
+  height: 100vh;
+}
+
 img {
   max-width: 100%;
 }
