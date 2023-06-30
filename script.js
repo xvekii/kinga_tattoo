@@ -29,7 +29,29 @@ modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
   }
-})
+});
+
+
+// let imageThumbs = document.getElementById("gallery-img");
+// let currentImage = document.getElementById("#current-image");
+
+// for (let i = 1; i <= 20; i++) {
+//   let thumb = document.createElement("img");
+//   thumb.src = "images/image" + i + ".jpg";
+//   thumb.alt = "Image " + "i";
+
+//   currentImage.addEventListener("click", () => {
+//     currentImage.src = this.src;
+//     currentImage.alt = this.alt;
+//   });
+
+// }
+
+
+
+
+
+
 // small logo disappear on scroll down ==> remove CSS
 
 // let prevScrollPos = window.scrollY;
