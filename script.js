@@ -22,21 +22,24 @@ const closeModal = document.querySelector(".close-modal");
 
 openModal.forEach(function(e) {
   e.addEventListener("click", () => {
-    
     modal.showModal();
-    imgChange();
-    
+    imgChange(e);
     // for (let i = 1; i <= 20; i++) {
     //   let thumb = document.createElement("img");
     //   thumb.src = "images/image" + i + ".jpg";
     //   thumb.alt = "Image " + "i";
     //   currentImage.src = this.src;
     //   currentImage.alt = this.alt;
-
     // }
-    
   });
 });
+
+function imgChange(e) {
+  let currentImage = document.getElementById("current-image");
+  currentImage.src = e.src;
+  console.log(currentImage.src);
+  
+}
   
 closeModal.addEventListener("click", () => {
   modal.close();
@@ -48,14 +51,14 @@ modal.addEventListener("click", (e) => {
   }
 });
 
-function imgChange() {
-  let currentImage = document.getElementById("current-image");
-  currentImage.src = "images/image2.jpg";
-
-}
 
 
-    
+
+// function imgChange() {
+//   let currentImage = document.getElementById("current-image");
+//   currentImage.src = "images/image2.jpg";
+//   console.log(currentImage.alt);
+// }
 
 // let currentImage = document.getElementById("#current-image");
 
