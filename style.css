@@ -58,8 +58,9 @@ img {
 
 header {
   position: fixed;
-  padding: 1em .1em 0 .1em;
+  padding: .3em;
   width: 100%;
+  background-color: #C8C8C9;
 }
 
 /* test header */
@@ -119,8 +120,8 @@ header {
 .small-logo-container {
   display: flex;
   align-items: center;
-  width: 4em;
-  min-width: 3.5em;
+  width: 3em;
+  min-width: 2em;
   pointer-events: all;
   /* try out for logo disappear on scroll */
   /* opacity: 1;
