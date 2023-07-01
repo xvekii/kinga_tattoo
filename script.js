@@ -33,7 +33,7 @@ openModal.forEach(function(e) {
     modal.showModal();
     imgChange(e);
     // for (let i = 1; i <= 20; i++) {
-    //   let thumb = document.createElement("img");
+    //   
     //   thumb.src = "images/image" + i + ".jpg";
     //   thumb.alt = "Image " + "i";
     //   currentImage.src = this.src;
@@ -42,10 +42,12 @@ openModal.forEach(function(e) {
   });
 });
 
+let currentImage = document.getElementById("current-image");
 function imgChange(e) {
-  let currentImage = document.getElementById("current-image");
+  
   currentImage.src = e.src;
-  console.log(currentImage.src);
+  currentImage.alt = e.alt;
+  console.log(currentImage.alt);
 };
   
 closeModal.addEventListener("click", () => {
@@ -55,11 +57,23 @@ closeModal.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
-  }
+  } 
 });
 
+// Buttons
+const galleryButtons = document.querySelectorAll(".gallery-btn");
+galleryButtons.forEach(function(button) {
+  button.addEventListener("click", (e) => {
+    let target = e.target.getAttribute("gallery-btn");
+    console.log(target);
+  })
+})
 
 
+// button = e.getAttribute;
+//   if (button === "[data-button]") {
+//     alert("Ahoy, Matey!");
+//   }
 
 // function imgChange() {
 //   let currentImage = document.getElementById("current-image");
@@ -69,14 +83,6 @@ modal.addEventListener("click", (e) => {
 
 // let currentImage = document.getElementById("#current-image");
 
-
-// const buttons = document.querySelector("[data-button]");
-// buttons.forEach(button => {
-//   button.addEventListener("click", () => {
-//     currentImage.src = this.src;
-//     currentImage.alt = this.alt;
-//   });
-// });
 
 // let imageThumbs = document.getElementById("gallery-img");
 
