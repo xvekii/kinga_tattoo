@@ -19,6 +19,14 @@ const openModal = document.querySelectorAll(".gallery-img");
 const closeModal = document.querySelector(".close-modal");
 
 
+// const gallery = document.querySelector(".gallery--flex");
+// gallery.onclick = function(e) {
+//   let target = e.target;
+//   if (target.tagName !== "IMG") return;
+//     modal.showModal();
+//     imgChange(e);
+//     console.log(target);
+//   };
 
 openModal.forEach(function(e) {
   e.addEventListener("click", () => {
@@ -38,8 +46,7 @@ function imgChange(e) {
   let currentImage = document.getElementById("current-image");
   currentImage.src = e.src;
   console.log(currentImage.src);
-  
-}
+};
   
 closeModal.addEventListener("click", () => {
   modal.close();
