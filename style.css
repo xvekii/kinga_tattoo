@@ -258,7 +258,7 @@ header {
 #current-image {
   max-width: 100%;
   width: 100%;
-  /* border: 2px solid #C8C8C9; */
+  border: 2px solid #C8C8C9;
 }
 
 h2 {
@@ -294,7 +294,7 @@ h2 {
 
   #modal[open] {
     padding: 1.5em;
-    width: 80%;
+    width: 90%;
   }
   
 
