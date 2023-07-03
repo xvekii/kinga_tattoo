@@ -62,12 +62,12 @@ modal.addEventListener("click", (e) => {
 
 // Buttons
 const galleryButtons = document.querySelectorAll(".gallery-btn");
+
 galleryButtons.forEach(function(button) {
-  button.addEventListener("click", (e) => {
-    let target = e.target.getAttribute("gallery-btn");
-    console.log(target);
-  })
-})
+   button.addEventListener("click", () => {
+    console.log("HOY, MATEY!");
+   });
+  });
 
 
 // button = e.getAttribute;
