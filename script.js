@@ -65,7 +65,11 @@ const galleryButtons = document.querySelectorAll(".gallery-btn");
 
 galleryButtons.forEach(function(button) {
    button.addEventListener("click", () => {
-    console.log("HOY, MATEY!");
+    const bts = button.getAttribute("class");
+    console.log(bts);
+    if (bts.includes("prev")) {
+      console.log("prev!");
+    }
    });
   });
 
