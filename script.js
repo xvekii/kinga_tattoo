@@ -56,12 +56,16 @@ closeModal.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
-  } 
+  } else if (e.target.nodeName === "BUTTON") {
+    console.log(e.target);
+    swap();
+  }
 });
 
 // Buttons
 const galleryButtons = document.querySelectorAll(".gallery-btn");
 
+function swap() {
 galleryButtons.forEach(function(button) {
   button.addEventListener("click", () => {
   let btnAttr = button.getAttribute("class");
@@ -69,26 +73,31 @@ galleryButtons.forEach(function(button) {
   if (!btnAttr.includes("prev")) {
     console.log("next!")
   } else {
-    switchImg();
-     
-  }
-  });
-});
-
-  function switchImg() {
     console.log("prev!");
+    // let newImg= document.getElementById("current-image");
     let currentImageAlt = currentImage.alt;
     let prevImageNum = currentImageAlt.substring(6);
     prevImageNum = Number(prevImageNum);
     console.log("prevImg:", prevImageNum);
-    let typeO = typeof(prevImageNum);
-    console.log(typeO);
-    prevImageNum = prevImageNum - 1;
+    prevImageNum =  counter(prevImageNum);
     currentImage.src = "images/image" + prevImageNum + ".jpg";
     console.log("prevImg:", prevImageNum);
     console.log(`prev image number: ${prevImageNum}, currImageSrc1: ${currentImage.src}`);
+
+  }
+  });
+});
+}
+  
+    
+    
+  
+
+  function counter(i) {
+    return i - 1;
   }
 
+  
   // let currentImageAlt = currentImage.alt;
   // console.log(`currentAlt0: ${currentImageAlt}, currImageSrc0: ${currentImage.src}`);
   // let prevImageNum = currentImageAlt.substring(6);
