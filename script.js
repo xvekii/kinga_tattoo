@@ -57,7 +57,8 @@ closeModal.addEventListener("click", () => {
   modal.close();
 });
 
-
+// Click on modal closes it
+// Maybe simplify?
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
@@ -65,12 +66,10 @@ modal.addEventListener("click", (e) => {
   } else if (e.target.nodeName === "IMG") {
     
       console.log("img e:", e);
-      
 
   } else if (e.target.nodeName === "BUTTON") {
     
     // To be added
-  
   }
 });
 
@@ -78,22 +77,28 @@ modal.addEventListener("click", (e) => {
 // Buttons
 const galleryButtons = document.querySelectorAll(".gallery-btn");
 
-// function btnClick() {
+// Add eventListener to all buttons
+
 galleryButtons.forEach(function(button) {
   button.addEventListener("click", () => {
+  
+  // Get clicked button attribute  
   let btnAttr = button.getAttribute("class");
   console.log("btnAtr:", btnAttr);
 
+  // Button clicked check
+  // Right btn clicked (next)
   if (!btnAttr.includes("prev")) {
     console.log("next works!")
+    
+    // Left button clicked (prev)
   } else {
     console.log("prev works!");
     
-
-
   }
+  
+  });
 });
- });
 
 // let btnAttr = galleryBtn.getAttribute("class");
     // console.log(btnAttr);
