@@ -13,23 +13,42 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 
 const modal = document.querySelector("#modal");
 
-const openModal = document.querySelectorAll(".gallery-img");
+const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModal = document.querySelector(".close-modal");
 
+
+
 // Event listeners for gallery images
-openModal.forEach(function(e) {
+galleryImgs.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
     imgChange(e);
-
-
+    imgSlide(e);
   });
 });
+
+function imgSlide(e) {
+  
+  currentImage.src = e.src;
+  // console.log("Alt start: ", currentImageAlt);
+  // currentImageAlt = currentImage.alt;
+  // prevImageNum = currentImageAlt.substring(6);
+  // prevImageNum = Number(prevImageNum);
+  // let counter = 1;
+  // prevImageNum = prevImageNum - counter;
+  // console.log("AltConv", prevImageNum);
+ 
+  // currentImage.src = "images/image" + `${prevImageNum}` + ".jpg";
+  // console.log("sourceOpen", openModal[prevImageNum].src);
+  // console.log("AltprevImgEnd:", prevImageNum);
+  // console.log(`prev image number last: ${prevImageNum}, currImageSrcEnd: ${currentImage.src}`);
+}
 
 let currentImage = document.getElementById("current-image");
 function imgChange(e) {
   currentImage.src = e.src;
   currentImage.alt = e.alt;
+  console.log("current:", currentImage.src);
 
   // console.log(currentImage.alt);
 };
@@ -38,15 +57,43 @@ closeModal.addEventListener("click", () => {
   modal.close();
 });
 
+
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
+  
+  } else if (e.target.nodeName === "IMG") {
     
-  // } else if (e.target.nodeName === "BUTTON") {
-  //   console.log(e.target);
+      console.log("img e:", e);
+      
+    
+
+  } else if (e.target.nodeName === "BUTTON") {
+    
+    // for (let i = 0; i <= openModal.length - 1; )
+    let currentImageAlt = 0;
+    let prevImageNum = 0;
+    imgSlide(e);
+    // console.log("Alt start: ", currentImageAlt);
+    // currentImageAlt = currentImage.alt;
+    // prevImageNum = currentImageAlt.substring(6);
+    // prevImageNum = Number(prevImageNum);
+    // let counter = 1;
+    // prevImageNum = prevImageNum - counter;
+    // console.log("AltConv", prevImageNum);
+    // currentImage.src = "images/image" + `${prevImageNum}` + ".jpg";
+    // console.log("AltprevImgEnd:", prevImageNum);
+    // console.log(`prev image number last: ${prevImageNum}, currImageSrcEnd: ${currentImage.src}`);
+
 
   }
+  // } else {
+  //   console.log("error)")
+  // }
 });
+
+
+
 
 // // Buttons
 // const galleryButtons = document.querySelectorAll(".gallery-btn");
@@ -62,23 +109,16 @@ modal.addEventListener("click", (e) => {
 //     let currentImageAlt = currentImage.alt;
 //     let prevImageNum = currentImageAlt.substring(6);
 //     prevImageNum = Number(prevImageNum);
-//     prevImageNum =  counter(prevImageNum);
-//     currentImage.src = "images/image" + prevImageNum + ".jpg";
+//     let i = 1;
+//     currentImage.src = "images/image" + (prevImageNum - i) + ".jpg";
 //     console.log("prevImg:", prevImageNum);
 //     console.log(`prev image number: ${prevImageNum}, currImageSrc1: ${currentImage.src}`);
-
 //   }
 //   });
 // });
 // }
   
     
-    
-  
-
-//   function counter(i) {
-//     return i - 1;
-//   }
 
   
   // let currentImageAlt = currentImage.alt;
