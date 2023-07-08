@@ -11,6 +11,13 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   navMenu.classList.remove("active");
 }));
 
+// Go to gallery on click
+const sectionGallery = document.querySelector(".section");
+const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
+goToGalleryBtn.addEventListener("click", () => {
+  sectionGallery.scrollIntoView();
+});
+
 const modal = document.querySelector("#modal");
 
 const galleryImgs = document.querySelectorAll(".gallery-img");
