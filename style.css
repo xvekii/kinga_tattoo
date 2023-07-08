@@ -266,7 +266,7 @@ header {
   border: 2px solid #C8C8C9;
 }
 
-#gallery-h2 {
+.gallery-h2 {
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
