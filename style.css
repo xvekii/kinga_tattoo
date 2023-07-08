@@ -19,6 +19,10 @@ select {
   font: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: 'Roboto Mono', sans-serif;
