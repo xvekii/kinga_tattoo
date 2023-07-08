@@ -144,11 +144,11 @@ header {
   /* border: 1px solid green; */
 }
 
-.section {
+#section {
   /* background-color: rgba(12, 7, 7, 0.275); */
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(200,200,201,1) 89%);
-  padding-top: 7rem;
+  padding-top: 6rem;
 }
 
 .hamburger {
