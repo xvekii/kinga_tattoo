@@ -279,6 +279,10 @@ h2 {
   border-radius: 2px;
 }
 
+.footer__ul {
+  list-style: none;
+}
+
 /* was 1128, 100% */
 @media (min-width: 1200px) {
   .container {
