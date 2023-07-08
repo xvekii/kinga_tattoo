@@ -12,7 +12,7 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 }));
 
 // Go to gallery on click
-const sectionGallery = document.querySelector(".section");
+const sectionGallery = document.getElementById("section");
 const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
 goToGalleryBtn.addEventListener("click", () => {
   sectionGallery.scrollIntoView();
