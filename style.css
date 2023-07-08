@@ -322,11 +322,20 @@ h2 {
 }
 
 /* smaller devices */
+
+@media(max-width: 481px) {
+
+  .gallery-img {
+    width: 80%;
+  }
+  }
+
 @media (max-width: 912px) {
   .cta-btn,
   .cta-btns-container-main {
     display: flex;
   }
+  
 
   #modal[open] {
     padding: 1.5em;
