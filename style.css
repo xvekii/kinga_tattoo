@@ -270,10 +270,8 @@ h2 {
   width: 6rem;
   height: .20rem;
   background-color:black;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
   margin-top: 8rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.4rem;
   border: 1px solid white;
   border-radius: 2px;
 }
@@ -289,7 +287,6 @@ h2 {
 
 .footer__links-container {
   display: flex;
-  
   align-items: center;
   gap: .6rem;
 }
