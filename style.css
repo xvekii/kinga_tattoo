@@ -143,6 +143,7 @@ header {
   /* background-color: rgba(12, 7, 7, 0.275); */
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(200,200,201,1) 89%);
+  padding-top: 7rem;
 }
 
 .hamburger {
@@ -260,10 +261,18 @@ header {
   border: 2px solid #C8C8C9;
 }
 
+.gallery-h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+
+}
 h2 {
   margin: 0;
   padding: 20px;
   font-size: 1.2rem;
+  text-decoration: underline;
+  -webkit-text-stroke: 1px white;
 }
 
 .footer__separator {
