@@ -267,6 +267,18 @@ h2 {
   font-size: 1.2rem;
 }
 
+.footer__separator {
+  width: 6rem;
+  height: .20rem;
+  background-color:black;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
 /* was 1128, 100% */
 @media (min-width: 1200px) {
   .container {
