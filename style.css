@@ -8,7 +8,14 @@
   font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto+Serif&display=swap');
+@font-face {
+  font-family: 'Roboto Serif 28pt';
+  src: url('fonts/RobotoSerif28pt-Regular.woff2') format('woff2'),
+      url('fonts/RobotoSerif28pt-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
