@@ -353,13 +353,15 @@ h2, .contact-h2 {
     display: flex;
   }
   
+  h2, .contact-h2 {
+    font-size: 1.6rem;
+  }
 
   #modal[open] {
     padding: 0.1rem;
     width: 90%;
   }
   
-
   .hamburger {
     display: block; 
   }
