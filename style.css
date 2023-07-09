@@ -300,13 +300,14 @@ h2, .contact-h2 {
 }
 
 .main-contact-wrapper {
-  padding-top: 6rem;
+  /* padding-top: 6rem; */
   margin: 0 auto;
   max-width: 80%;
 }
 
 .contact-h2 {
   text-align: center;
+  padding-top: 7rem;
 }
 
 .contact-box {
@@ -321,7 +322,7 @@ h2, .contact-h2 {
   color: black;
 }
 
-.contact-container {
+.contact-container-left {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
