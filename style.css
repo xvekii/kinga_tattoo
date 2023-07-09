@@ -332,7 +332,7 @@ h2, .contact-h2 {
 }
 
 .contact-container-right {
-  width: 50%;
+  
   max-width: 50%;
 }
 
@@ -400,6 +400,16 @@ iframe {
     display: flex;
   }
   
+  .main-contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-container-left,
+  .contact-container-right {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
   h2, .contact-h2 {
     font-size: 1.4rem;
   }
