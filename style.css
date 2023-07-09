@@ -303,6 +303,13 @@ h2, .contact-h2 {
   text-align: center;
 }
 
+.contact-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .footer__separator {
   width: 6rem;
   height: .20rem;
