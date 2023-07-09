@@ -300,9 +300,11 @@ h2, .contact-h2 {
 }
 
 .main-contact-wrapper {
-  /* padding-top: 6rem; */
+  padding-top: 2rem;
   margin: 0 auto;
   max-width: 80%;
+  display: flex;
+  gap: 6rem;
 }
 
 .contact-h2 {
@@ -325,8 +327,18 @@ h2, .contact-h2 {
 .contact-container-left {
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
-  max-width: 40%;
+  gap: 1.6rem;
+  max-width: 50%;
+}
+
+.contact-container-right {
+  width: 50%;
+  max-width: 50%;
+}
+
+iframe {
+  max-width: 100%;
+
 }
 
 .footer__separator {
