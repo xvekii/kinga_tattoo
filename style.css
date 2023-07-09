@@ -291,10 +291,12 @@ h2, .contact-h2 {
   font-size: 1.8rem;
   text-decoration: underline;
   text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
+  /* text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
   /* -webkit-text-stroke: 1px rgb(255 255 255 / 81%); */
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Roboto Serif", sans-serif;
   letter-spacing: .1em;
+  text-underline-offset: 0.2em;
 }
 
 .contact-h2 {
