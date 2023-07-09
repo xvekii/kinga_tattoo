@@ -303,7 +303,7 @@ h2, .contact-h2 {
   text-align: center;
 }
 
-.contact-list {
+.contact-box {
   list-style: none;
   display: flex;
   gap: 1rem;
