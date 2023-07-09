@@ -9,9 +9,9 @@
 }
 
 @font-face {
-  font-family: 'Roboto Serif 28pt';
-  src: url('fonts/RobotoSerif28pt-Regular.woff2') format('woff2'),
-      url('fonts/RobotoSerif28pt-Regular.woff') format('woff');
+  font-family: 'Roboto Serif';
+  src: url('fonts/RobotoSerif-Regular.woff2') format('woff2'),
+       url('fonts/RobotoSerif-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -293,7 +293,7 @@ h2, .contact-h2 {
   text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
   /* -webkit-text-stroke: 1px rgb(255 255 255 / 81%); */
   font-weight: 500;
-  font-family: "Roboto Serif";
+  font-family: "Roboto Serif", sans-serif;
   letter-spacing: .1em;
 }
 
