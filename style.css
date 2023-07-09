@@ -332,13 +332,11 @@ h2, .contact-h2 {
 }
 
 .contact-container-right {
-  
   max-width: 50%;
 }
 
 iframe {
   max-width: 100%;
-
 }
 
 .footer__separator {
@@ -384,6 +382,7 @@ iframe {
     font-size: 1.6rem;
   } 
 }
+
 
 /* smaller devices */
 
