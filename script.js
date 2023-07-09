@@ -18,6 +18,11 @@ goToGalleryBtn.addEventListener("click", () => {
   sectionGallery.scrollIntoView();
 });
 
+const contactBtn = document.querySelector(".cta-btn--contact");
+contactBtn.addEventListener("click", () => {
+  location.href = "contact.html";
+});
+
 const modal = document.querySelector("#modal");
 
 const galleryImgs = document.querySelectorAll(".gallery-img");
