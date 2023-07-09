@@ -121,6 +121,7 @@ header {
   /* text-decoration: underline; */
   text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.4);
   /* -webkit-text-stroke: 1px rgba(255, 255, 255, 63%); */
+
 }
 
 .small-logo-container {
@@ -284,7 +285,7 @@ h2, .contact-h2 {
 }
 
 .contact-h2 {
-  text-align: ;
+  text-align: center;
 }
 
 .footer__separator {
