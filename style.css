@@ -287,7 +287,7 @@ header {
 }
 h2, .contact-h2 {
   margin: 0px;
-  /* padding: 20px; */
+  padding-bottom: 1rem;
   font-size: 1.8rem;
   text-decoration: underline;
   text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
@@ -308,6 +308,7 @@ h2, .contact-h2 {
   display: flex;
   gap: 1rem;
   align-items: center;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 .contact-link {
