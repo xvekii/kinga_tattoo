@@ -35,9 +35,8 @@ let counter = 0;
 galleryImgs.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
-    
-    counter = imgChange(e);
-    imgSlide();
+    imgChange(e);
+    imgSlide(counter);
   });
 });
 
@@ -50,12 +49,9 @@ function imgChange(e) {
   prevImageNum = currentImageAlt.substring(6);
   counter = Number(prevImageNum);
   
-  // currentImage.src = "images/image" + `${prevImageNum}` + ".jpg";
-  
   console.log("counterImgChange:", counter);
 
   return counter;
-
   // tu staviti counter za alt?
 
 
@@ -64,7 +60,7 @@ function imgChange(e) {
 
 const galleryButtons = document.querySelectorAll(".gallery-btn");
 
-function imgSlide() {
+function imgSlide(counter) {
 
 // Buttons
 // Add eventListener to all buttons
