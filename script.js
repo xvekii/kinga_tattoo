@@ -93,29 +93,7 @@ galleryButtons.forEach(function(button) {
   }
   });
 });
-
-
-
-
-
-
-
-
-
-  // console.log("Alt start: ", currentImageAlt);
-  // currentImageAlt = currentImage.alt;
-  // prevImageNum = currentImageAlt.substring(6);
-  // prevImageNum = Number(prevImageNum);
-  // let counter = 1;
-  // prevImageNum = prevImageNum - counter;
-  // console.log("AltConv", prevImageNum);
- 
-  // currentImage.src = "images/image" + `${prevImageNum}` + ".jpg";
-  // console.log("sourceOpen", openModal[prevImageNum].src);
-  // console.log("AltprevImgEnd:", prevImageNum);
-  // console.log(`prev image number last: ${prevImageNum}, currImageSrcEnd: ${currentImage.src}`);
 }
-
 
 closeModal.addEventListener("click", () => {
   modal.close();
@@ -126,14 +104,6 @@ closeModal.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
-  
-  } else if (e.target.nodeName === "IMG") {
-    
-      console.log("img e:", e);
-
-  } else if (e.target.nodeName === "BUTTON") {
-    
-    // To be added
   }
 });
 
