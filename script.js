@@ -29,27 +29,81 @@ const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModal = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
 
+let counter = 0;
 
-// Event listeners for gallery images
+// Opening gallery images on click
 galleryImgs.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
-    imgChange(e);
-    imgSlide(e);
+    
+    counter = imgChange(e);
+    imgSlide();
   });
 });
 
 function imgChange(e) {
   currentImage.src = e.src;
   currentImage.alt = e.alt;
-  console.log("current:", currentImage.src);
+  console.log("currentImgChange:", currentImage.src);
+  
+  let currentImageAlt = currentImage.alt;
+  prevImageNum = currentImageAlt.substring(6);
+  counter = Number(prevImageNum);
+  
+  // currentImage.src = "images/image" + `${prevImageNum}` + ".jpg";
+  
+  console.log("counterImgChange:", counter);
+
+  return counter;
+
+  // tu staviti counter za alt?
+
 
   // console.log(currentImage.alt);
 };
 
-function imgSlide(e) {
+const galleryButtons = document.querySelectorAll(".gallery-btn");
+
+function imgSlide() {
+
+// Buttons
+
+
+// Add eventListener to all buttons
+
+galleryButtons.forEach(function(button) {
+  button.addEventListener("click", () => {
   
-  currentImage.src = e.src;
+  // Get clicked button attribute  
+  let btnAttr = button.getAttribute("class");
+  console.log("btnAtr:", btnAttr);
+
+  // Button clicked check
+  // Right btn clicked (next)
+  if (!btnAttr.includes("prev")) {
+    console.log("next works!")
+    
+    // Left button clicked (prev)
+  
+  } else {
+      console.log("prev works!");
+      currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
+      console.log("currentFinal:", currentImage.src);
+      counter--;
+      
+  }
+  
+  });
+});
+
+
+
+
+
+
+
+
+
   // console.log("Alt start: ", currentImageAlt);
   // currentImageAlt = currentImage.alt;
   // prevImageNum = currentImageAlt.substring(6);
@@ -86,31 +140,31 @@ modal.addEventListener("click", (e) => {
 });
 
 
-// Buttons
-const galleryButtons = document.querySelectorAll(".gallery-btn");
+// // Buttons
+// const galleryButtons = document.querySelectorAll(".gallery-btn");
 
-// Add eventListener to all buttons
+// // Add eventListener to all buttons
 
-galleryButtons.forEach(function(button) {
-  button.addEventListener("click", () => {
+// galleryButtons.forEach(function(button) {
+//   button.addEventListener("click", () => {
   
-  // Get clicked button attribute  
-  let btnAttr = button.getAttribute("class");
-  console.log("btnAtr:", btnAttr);
+//   // Get clicked button attribute  
+//   let btnAttr = button.getAttribute("class");
+//   console.log("btnAtr:", btnAttr);
 
-  // Button clicked check
-  // Right btn clicked (next)
-  if (!btnAttr.includes("prev")) {
-    console.log("next works!")
+//   // Button clicked check
+//   // Right btn clicked (next)
+//   if (!btnAttr.includes("prev")) {
+//     console.log("next works!")
     
-    // Left button clicked (prev)
-  } else {
-    console.log("prev works!");
+//     // Left button clicked (prev)
+//   } else {
+//     console.log("prev works!");
     
-  }
+//   }
   
-  });
-});
+//   });
+// });
 
 // let btnAttr = galleryBtn.getAttribute("class");
     // console.log(btnAttr);
