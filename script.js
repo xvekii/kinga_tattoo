@@ -78,10 +78,14 @@ galleryButtons.forEach(function(button) {
   // Button clicked check
   // Right btn clicked (next)
   if (!btnAttr.includes("prev")) {
-    console.log("next works!")
-    
-    // Left button clicked (prev)
-  
+    if (counter < 82) {
+    currentImage.src = "images/image" + `${counter + 1}` + ".jpg";
+    // console.log("currentFinal:", currentImage.src);
+    // console.log("counterFinal:", counter);
+    counter++;
+    } else {
+      counter = 0;
+    }
   } else if (counter > 1) {
       // console.log("prev works!");
       currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
