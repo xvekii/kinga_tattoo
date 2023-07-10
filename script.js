@@ -67,8 +67,6 @@ const galleryButtons = document.querySelectorAll(".gallery-btn");
 function imgSlide() {
 
 // Buttons
-
-
 // Add eventListener to all buttons
 
 galleryButtons.forEach(function(button) {
@@ -76,7 +74,6 @@ galleryButtons.forEach(function(button) {
   
   // Get clicked button attribute  
   let btnAttr = button.getAttribute("class");
-  console.log("btnAtr:", btnAttr);
 
   // Button clicked check
   // Right btn clicked (next)
@@ -85,14 +82,15 @@ galleryButtons.forEach(function(button) {
     
     // Left button clicked (prev)
   
-  } else {
-      console.log("prev works!");
+  } else if (counter > 1) {
+      // console.log("prev works!");
       currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
-      console.log("currentFinal:", currentImage.src);
+      // console.log("currentFinal:", currentImage.src);
+      // console.log("counterFinal:", counter);
       counter--;
-      
+  } else {
+    counter = 83;
   }
-  
   });
 });
 
