@@ -424,7 +424,12 @@ iframe {
   .close-modal,
   .gallery-btn {
   padding-bottom: 1px;
-}
+  }
+
+  .close-modal {
+    bottom: .3rem;
+  }
+
 
   .main-contact-wrapper {
     flex-direction: column;
