@@ -189,6 +189,7 @@ header {
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1.6rem;
   width: 210px;
   height: 129px;
   /* border: 1px solid green; */
@@ -197,7 +198,7 @@ header {
 .cta-btn {
   display: none;
   width: 210px;
-  padding: 0.632em;
+  padding: 0.9rem;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -205,11 +206,11 @@ header {
   /* typography */
   color: #000;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: Roboto Mono;
   font-weight: 500;
   font-variant: small-caps;
-  letter-spacing: 1.14px;
+  letter-spacing: 1.44px;
   /* font-family: "Roboto Serif"; */
 }
 
