@@ -24,7 +24,6 @@ contactBtn.addEventListener("click", () => {
 });
 
 const modal = document.querySelector("#modal");
-
 const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModalBtn = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
@@ -52,10 +51,6 @@ function imgChange(e) {
   console.log("counterImgChange:", counter);
 
   return counter;
-  // tu staviti counter za alt?
-
-
-  // console.log(currentImage.alt);
 };
 
 const galleryButtons = document.querySelectorAll(".gallery-btn");
@@ -97,44 +92,3 @@ modal.addEventListener("click", (e) => {
     modal.close();
   }
 });
-
-
-// // Buttons
-// const galleryButtons = document.querySelectorAll(".gallery-btn");
-
-// // Add eventListener to all buttons
-
-// galleryButtons.forEach(function(button) {
-//   button.addEventListener("click", () => {
-  
-//   // Get clicked button attribute  
-//   let btnAttr = button.getAttribute("class");
-//   console.log("btnAtr:", btnAttr);
-
-//   // Button clicked check
-//   // Right btn clicked (next)
-//   if (!btnAttr.includes("prev")) {
-//     console.log("next works!")
-    
-//     // Left button clicked (prev)
-//   } else {
-//     console.log("prev works!");
-    
-//   }
-  
-//   });
-// });
-
-// let btnAttr = galleryBtn.getAttribute("class");
-    // console.log(btnAttr);
-    
-    // console.log("Alt start: ", currentImageAlt);
-    // currentImageAlt = currentImage.alt;
-    // prevImageNum = currentImageAlt.substring(6);
-    // prevImageNum = Number(prevImageNum);
-    // let counter = 1;
-    // prevImageNum = prevImageNum - counter;
-    // console.log("AltConv", prevImageNum);
-    // currentImage.src = "images/image" + `${prevImageNum}` + ".jpg";
-    // console.log("AltprevImgEnd:", prevImageNum);
-    // console.log(`prev image number last: ${prevImageNum}, currImageSrcEnd: ${currentImage.src}`);
