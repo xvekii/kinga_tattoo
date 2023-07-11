@@ -26,7 +26,7 @@ contactBtn.addEventListener("click", () => {
 const modal = document.querySelector("#modal");
 
 const galleryImgs = document.querySelectorAll(".gallery-img");
-const closeModal = document.querySelector(".close-modal");
+const closeModalBtn = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
 
 let counter = 0;
@@ -62,45 +62,36 @@ const galleryButtons = document.querySelectorAll(".gallery-btn");
 
 function imgSlide(counter) {
 
-// Buttons
-// Add eventListener to all buttons
+  // Buttons
+  galleryButtons.forEach(function(button) {
+    button.addEventListener("click", () => {
+    
+    // Get clicked button attribute  
+    let btnAttr = button.getAttribute("class");
 
-galleryButtons.forEach(function(button) {
-  button.addEventListener("click", () => {
-  
-  // Get clicked button attribute  
-  let btnAttr = button.getAttribute("class");
-
-  // Button clicked check
-  // Right btn clicked (next)
-  if (!btnAttr.includes("prev")) {
-    if (counter < 82) {
-    currentImage.src = "images/image" + `${counter + 1}` + ".jpg";
-    // console.log("currentFinal:", currentImage.src);
-    // console.log("counterFinal:", counter);
-    counter++;
+    // Button clicked check
+    // Right btn clicked (next)
+    if (!btnAttr.includes("prev")) {
+      if (counter < 82) {
+      currentImage.src = "images/image" + `${counter + 1}` + ".jpg";
+      counter++;
+      } else {
+        counter = 0;
+      }
+    } else if (counter > 1) {
+        currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
+        counter--;
     } else {
-      counter = 0;
+      counter = 83;
     }
-  } else if (counter > 1) {
-      // console.log("prev works!");
-      currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
-      // console.log("currentFinal:", currentImage.src);
-      // console.log("counterFinal:", counter);
-      counter--;
-  } else {
-    counter = 83;
-  }
+    });
   });
-});
 }
 
-closeModal.addEventListener("click", () => {
+closeModalBtn.addEventListener("click", () => {
   modal.close();
 });
 
-// Click on modal closes it
-// Maybe simplify?
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modal.close();
