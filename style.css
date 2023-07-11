@@ -280,6 +280,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   padding: 0 .5rem;
+  font-family: Verdana, sans-serif;
 }
 
 .gallery-btn.prev {
