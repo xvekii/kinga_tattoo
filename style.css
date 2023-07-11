@@ -302,7 +302,7 @@ h2, .contact-h2 {
   font-weight: 600;
   font-family: "Roboto Serif", sans-serif;
   letter-spacing: .1em;
-  text-underline-offset: 0.27rem;
+  text-underline-offset: 0.17rem;
 }
 
 .main-contact-wrapper {
@@ -310,7 +310,7 @@ h2, .contact-h2 {
   margin: 0 auto;
   max-width: 80%;
   display: flex;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .contact-h2 {
