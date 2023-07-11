@@ -397,7 +397,7 @@ iframe {
   .gallery-img {
     width: 80%;
   }
-  }
+}
 
 @media (max-width: 912px) {
   .cta-btn,
@@ -448,7 +448,7 @@ iframe {
   .nav__menu {
     position: fixed;
     left: -100%;
-    top: 55.8px;
+    top: 0;
     gap: 0;
     flex-direction: column;
     width: 100%;
