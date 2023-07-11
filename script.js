@@ -31,12 +31,16 @@ const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModalBtn = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
 
+
+
+
 let counter = 0;
 
 // Opening gallery images on click
 galleryImgs.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
+    document.body.style.overflow = "hidden";
     imgChange(e);
     imgSlide(counter);
   });
@@ -87,11 +91,17 @@ function imgSlide(counter) {
 }
 
 closeModalBtn.addEventListener("click", () => {
+  modalCloseScrollOn();
   modal.close();
 });
 
 modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
+    modalCloseScrollOn();
     modal.close();
   }
 });
+
+function modalCloseScrollOn() {
+  document.body.style.overflow = "scroll";
+}
