@@ -70,7 +70,7 @@ function imgSlide(counter) {
     // Button clicked check
     // Right btn clicked (next)
     if (!btnAttr.includes("prev")) {
-      if (counter < 82) {
+      if (counter < 80) {
       currentImage.src = "images/image" + `${counter + 1}` + ".jpg";
       counter++;
       } else {
@@ -80,7 +80,7 @@ function imgSlide(counter) {
         currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
         counter--;
     } else {
-      counter = 83;
+      counter = 81;
     }
     });
   });
