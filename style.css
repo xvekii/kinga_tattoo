@@ -421,6 +421,11 @@ iframe {
     display: flex;
   }
   
+  .close-modal,
+  .gallery-btn {
+  padding-bottom: 1px;
+}
+
   .main-contact-wrapper {
     flex-direction: column;
   }
