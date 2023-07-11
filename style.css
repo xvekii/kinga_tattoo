@@ -419,9 +419,8 @@ iframe {
   }
 
   .nav__link {
-    
-    font-size: 1.2rem;
-    line-height: 2.638em;
+    font-size: 1rem;
+    line-height: 2rem;
   }
 
   #modal[open] {
@@ -448,7 +447,7 @@ iframe {
   .nav__menu {
     position: fixed;
     left: -100%;
-    top: 100px;
+    top: 55.8px;
     gap: 0;
     flex-direction: column;
     width: 100%;
