@@ -276,6 +276,20 @@ header {
   background-color: rgba(0, 0, 0, .1);
 }
 
+.close-modal:focus,
+
+.gallery-btn:focus,
+.close-modal:focus {
+  outline: 1px solid black;
+}
+
+.gallery-btn:hover,
+.close-modal:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+
 .gallery-btn {
   top: 50%;
   transform: translateY(-50%);
@@ -294,6 +308,8 @@ header {
 .close-modal {
   bottom: 1.4rem;
 }
+
+
 
 #current-image {
   max-width: 100%;
