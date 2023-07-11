@@ -268,7 +268,7 @@ header {
   position: absolute;
   background: none;
   border: none; 
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   z-index: 2;
   color: rgba(255, 255, 255, .5);
   cursor: pointer;
@@ -305,7 +305,7 @@ header {
 
 .close-modal {
   bottom: 1.4rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 
