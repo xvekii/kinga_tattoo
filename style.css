@@ -263,8 +263,6 @@ header {
   padding-bottom: 3px;
 }
 
-
-
 .close-modal,
 .gallery-btn {
   position: absolute;
@@ -276,7 +274,6 @@ header {
   cursor: pointer;
   border-radius: .25rem;
   background-color: rgba(0, 0, 0, .1);
-  height: 10%;
 }
 
 .gallery-btn {
