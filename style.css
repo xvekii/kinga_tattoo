@@ -447,11 +447,11 @@ iframe {
 
   .nav__menu {
     position: fixed;
-    left: -100%;
+    right: 100%;
     top: 0;
     gap: 0;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     align-items: center;
     text-align: center;
     transition: 0.3s;
@@ -462,12 +462,13 @@ iframe {
   }
  
   .nav__menu.active {
-    left: 0;
+    left: 550px;
     background-color: #FFFFFF;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 3.4rem;
     opacity: 0.9;
     height: 100%;
+    box-shadow: -8px -3px 8px black;
   }
   
 }
