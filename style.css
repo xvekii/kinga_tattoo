@@ -471,6 +471,9 @@ iframe {
     box-shadow: -8px -3px 8px black;
   }
   
+  body.active {
+    overflow: hidden;
+  }
 }
 
 /* don't forget to add #gallery and fixed menu! 
