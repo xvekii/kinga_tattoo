@@ -455,8 +455,6 @@ iframe {
     align-items: center;
     text-align: center;
     transition: 0.3s;
-    mix-blend-mode: difference;
-    
   }
   
   .nav__item {
@@ -470,10 +468,7 @@ iframe {
     padding: 0;
     opacity: 0.9;
     height: 100%;
-    
-    
   }
-
   
 }
 
