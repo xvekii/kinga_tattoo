@@ -50,6 +50,10 @@ img {
   max-width: 100%;
 }
 
+.wide-img {
+  object-fit: cover;
+}
+
 .gallery--flex {
   display: flex;
   flex-wrap: wrap;
