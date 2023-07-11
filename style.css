@@ -219,10 +219,20 @@ header {
   background: #FFF;
 }
 
+.cta-btn--contact:active {
+  background: #899299;
+  color: #ffffff;
+}
+
 .cta-btn--gallery {
   border-radius: 8px;
   background: #000;
   color: #FFF;
+}
+
+.cta-btn--gallery:active {
+  background: #899299;
+  color: #000;
 }
 
 #modal[open] {
