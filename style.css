@@ -487,9 +487,9 @@ iframe {
     right: 0;
     background-color: #FFFFFF;
     margin: 0 auto;
-    padding-top: 3.4rem;
+    padding-top: 4rem;
     opacity: 0.9;
-    height: 53%;
+    max-height: 66%;
     box-shadow: -8px -3px 8px black;
   }
   
