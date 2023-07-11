@@ -423,7 +423,8 @@ iframe {
   
   .close-modal,
   .gallery-btn {
-  padding-bottom: 3px;
+  /* padding-bottom: 1px; */
+  vertical-align: middle;
   }
 
   .close-modal {
