@@ -301,7 +301,7 @@ h2, .contact-h2 {
   font-weight: 600;
   font-family: "Roboto Serif", sans-serif;
   letter-spacing: .1em;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.27rem;
 }
 
 .main-contact-wrapper {
@@ -455,6 +455,7 @@ iframe {
     text-align: center;
     transition: 0.3s;
     mix-blend-mode: difference;
+    
   }
   
   .nav__item {
@@ -467,7 +468,12 @@ iframe {
     margin: 0 auto;
     padding: 0;
     opacity: 0.9;
+    height: 100%;
+    
+    
   }
+
+  
 }
 
 /* don't forget to add #gallery and fixed menu! 
