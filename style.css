@@ -265,6 +265,7 @@ header {
 
 .close-modal,
 .gallery-btn {
+  all: initial;
   position: absolute;
   background: none;
   border: none; 
@@ -274,6 +275,7 @@ header {
   cursor: pointer;
   border-radius: .25rem;
   background-color: rgba(0, 0, 0, .1);
+  
 }
 
 .gallery-btn:focus,
