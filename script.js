@@ -17,22 +17,24 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 // Go to gallery on click
 const sectionGallery = document.getElementById("section");
 const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
-goToGalleryBtn.addEventListener("click", () => {
-  sectionGallery.scrollIntoView();
-});
+
+if(goToGalleryBtn){
+  goToGalleryBtn.addEventListener("click", () => {
+    sectionGallery.scrollIntoView();
+  });
+}
 
 const contactBtn = document.querySelector(".cta-btn--contact");
-contactBtn.addEventListener("click", () => {
-  location.href = "contact.html";
-});
+if(contactBtn){
+  contactBtn.addEventListener("click", () => {
+    location.href = "contact.html";
+  });
+}
 
 const modal = document.querySelector("#modal");
 const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModalBtn = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
-
-
-
 
 let counter = 0;
 
@@ -90,17 +92,21 @@ function imgSlide(counter) {
   });
 }
 
-closeModalBtn.addEventListener("click", () => {
-  modalCloseScrollOn();
-  modal.close();
-});
+if(closeModalBtn){
+  closeModalBtn.addEventListener("click", () => {
+    modalCloseScrollOn();
+    modal.close();
+  });
+}
 
-modal.addEventListener("click", (e) => {
+if(modal) {
+  modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modalCloseScrollOn();
     modal.close();
   }
-});
+  });
+}
 
 function modalCloseScrollOn() {
   document.body.style.overflow = "scroll";
