@@ -2,7 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__menu");
 const gallery = document.getElementById("gallery");
 
-
+// Hamburger
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -10,27 +10,19 @@ hamburger.addEventListener("click", () => {
   gallery.classList.toggle("blocked");
 });
 
-// window.addEventListener("click", function(e) {
-  
-//   console.log("target: ", e.target);
-//   // if(!(e.target.classList.contains("bar")) || !(e.target.classList.contains("hamburger"))) {
-//   //   hamburger.classList.toggle("active");
-//   //   navMenu.classList.remove("active");
-//   //   document.body.classList.remove("active");
-//   // }
-
-// });
-
+// Navigation
 document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
+  gallery.classList.toggle("blocked");
 }));
 
 
 // Go to gallery on click
 const sectionGallery = document.getElementById("section");
 const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
+
 
 if(goToGalleryBtn){
   goToGalleryBtn.addEventListener("click", () => {
