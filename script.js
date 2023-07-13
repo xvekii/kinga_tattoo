@@ -101,7 +101,7 @@ function imgSlide(counter) {
 if(closeModalBtn){
   closeModalBtn.addEventListener("click", () => {
     modalCloseScrollOn();
-    gallery.style.pointerEvents = "auto";
+    // gallery.style.pointerEvents = "auto";
     modal.close();
   });
 }
