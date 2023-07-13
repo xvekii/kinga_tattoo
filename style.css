@@ -273,7 +273,6 @@ header {
   cursor: pointer;
   border-radius: .25rem;
   background-color: rgba(0, 0, 0, .1);
-  
 }
 
 .gallery-btn:focus,
@@ -291,8 +290,9 @@ header {
 .gallery-btn {
   top: 50%;
   transform: translateY(-50%);
-  padding: 0 .5rem;
+  padding: .8rem .5rem;
   color: white;
+  line-height: 0;
   /* font-family: Verdana, sans-serif; */
 }
 
