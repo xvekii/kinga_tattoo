@@ -282,9 +282,14 @@ header {
 
 .gallery-btn:hover,
 .close-modal:hover {
-  color: white;
   background-color: rgba(0, 0, 0, 0.25);
 }
+
+.gallery-btn:hover path,
+.close-modal:hover path {
+  fill: white;
+}
+
 
 .gallery-btn {
   top: 50%;
@@ -295,8 +300,7 @@ header {
   /* font-family: Verdana, sans-serif; */
 }
 
-.gallery-btn svg path, 
-.close-modal svg path {
+.gallery-btns-paths {
   fill: rgba(255, 255, 255, .5);
 }
 
