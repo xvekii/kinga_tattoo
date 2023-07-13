@@ -8,11 +8,24 @@ hamburger.addEventListener("click", () => {
   document.body.classList.toggle("active");
 });
 
+
+window.addEventListener("click", function(e) {
+  
+  console.log("target: ", e.target);
+  // if(!(e.target.classList.contains("bar")) || !(e.target.classList.contains("hamburger"))) {
+  //   hamburger.classList.toggle("active");
+  //   navMenu.classList.remove("active");
+  //   document.body.classList.remove("active");
+  // }
+
+});
+
 document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
 }));
+
 
 // Go to gallery on click
 const sectionGallery = document.getElementById("section");
