@@ -70,13 +70,16 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  pointer-events: auto;
 }
 
 .gallery-img {
   width: 230px;
   max-width: 28.9%;
   border: 2px solid #C8C8C9;
+  cursor: pointer;
 }
+
 
 header {
   position: fixed;

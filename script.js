@@ -1,29 +1,32 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__menu");
+const gallery = document.getElementById("gallery");
 
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
+  gallery.style.pointerEvents = "none";
 });
 
 
-window.addEventListener("click", function(e) {
+// window.addEventListener("click", function(e) {
   
-  console.log("target: ", e.target);
-  // if(!(e.target.classList.contains("bar")) || !(e.target.classList.contains("hamburger"))) {
-  //   hamburger.classList.toggle("active");
-  //   navMenu.classList.remove("active");
-  //   document.body.classList.remove("active");
-  // }
+//   console.log("target: ", e.target);
+//   // if(!(e.target.classList.contains("bar")) || !(e.target.classList.contains("hamburger"))) {
+//   //   hamburger.classList.toggle("active");
+//   //   navMenu.classList.remove("active");
+//   //   document.body.classList.remove("active");
+//   // }
 
-});
+// });
 
 document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
+  gallery.style.pointerEvents = "auto";
 }));
 
 
@@ -55,14 +58,13 @@ let counter = 0;
 galleryImgs.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
-    
+    document.body.classList.toggle("active");
     imgChange(e);
     imgSlide(counter);
   });
 });
 
 function imgChange(e) {
-  document.body.classList.toggle("active");
   currentImage.src = e.src;
   currentImage.alt = e.alt;
   console.log("currentImgChange:", currentImage.src);
@@ -109,6 +111,7 @@ function imgSlide(counter) {
 if(closeModalBtn){
   closeModalBtn.addEventListener("click", () => {
     modalCloseScrollOn();
+    gallery.style.pointerEvents = "auto";
     modal.close();
   });
 }
