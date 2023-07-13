@@ -448,6 +448,14 @@ iframe {
   
   }
 
+  .gallery-btn.prev {
+    left: 0.29rem;
+  }
+
+  .gallery-btn.next {
+    right: 0.29rem;
+  }
+  
   .close-modal {
     bottom: .3rem;
   }
