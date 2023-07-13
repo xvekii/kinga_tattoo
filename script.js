@@ -10,7 +10,9 @@ hamburger.addEventListener("click", () => {
   gallery.style.pointerEvents = "none";
 });
 
-
+hamburger.addEventListener("click", () => {
+  gallery.style.pointerEvents = "auto";
+});
 // window.addEventListener("click", function(e) {
   
 //   console.log("target: ", e.target);
