@@ -42,13 +42,14 @@ let counter = 0;
 galleryImgs.forEach(function(e) {
   e.addEventListener("click", () => {
     modal.showModal();
-    document.body.style.overflow = "hidden";
+    
     imgChange(e);
     imgSlide(counter);
   });
 });
 
 function imgChange(e) {
+  document.body.classList.toggle("active");
   currentImage.src = e.src;
   currentImage.alt = e.alt;
   console.log("currentImgChange:", currentImage.src);
@@ -109,5 +110,5 @@ if(modal) {
 }
 
 function modalCloseScrollOn() {
-  document.body.style.overflow = "scroll";
+  document.body.classList.remove("active");
 }

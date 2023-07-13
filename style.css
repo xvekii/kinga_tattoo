@@ -41,6 +41,10 @@ body {
   line-height: 1.5;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 .main-wrapper {
   min-height: 100vh;
   /* min-height: 100dvh; */
@@ -253,6 +257,8 @@ header {
   background: black;
   opacity: .7;
 }
+
+
 
 .close-modal {
   font-weight: 200;
