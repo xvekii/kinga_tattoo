@@ -211,12 +211,11 @@ header {
   /* typography */
   color: #000;
   text-align: center;
-  font-size: 1.2rem;
-  font-family: Roboto Mono;
-  font-weight: 500;
+  font-size: .9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
   font-variant: small-caps;
   letter-spacing: 1.44px;
-  /* font-family: "Roboto Serif"; */
 }
 
 .cta-btn--contact {
