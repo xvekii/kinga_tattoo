@@ -15,7 +15,7 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
-  gallery.classList.toggle("blocked");
+  // gallery.classList.toggle("blocked");
 }));
 
 
