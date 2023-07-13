@@ -7,12 +7,9 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
-  gallery.style.pointerEvents = "none";
+  gallery.classList.toggle("blocked");
 });
 
-hamburger.addEventListener("click", () => {
-  gallery.style.pointerEvents = "auto";
-});
 // window.addEventListener("click", function(e) {
   
 //   console.log("target: ", e.target);
@@ -28,7 +25,6 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
-  gallery.style.pointerEvents = "auto";
 }));
 
 

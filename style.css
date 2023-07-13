@@ -73,6 +73,10 @@ img {
   pointer-events: auto;
 }
 
+#gallery.blocked {
+  pointer-events: none;
+}
+
 .gallery-img {
   width: 230px;
   max-width: 28.9%;
