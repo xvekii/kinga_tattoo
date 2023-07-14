@@ -218,13 +218,16 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-
+  cursor: pointer;
+  outline: 1px solid lightgray;
+  outline-offset: -3px;
   /* typography */
   color: #000;
   text-align: center;
   font-size: 1rem;
   font-family: 'Roboto Serif', sans-serif;
   text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
   font-weight: 600;
   font-variant: small-caps;
   letter-spacing: 1.44px;
