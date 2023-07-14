@@ -221,6 +221,7 @@ header {
   cursor: pointer;
   outline: 1px solid lightgray;
   outline-offset: -3px;
+  /* transition: 500ms; */
   /* typography */
   color: #000;
   text-align: center;
@@ -241,6 +242,8 @@ header {
 .cta-btn--contact:active {
   background: #899299;
   color: #ffffff;
+  /* outline: white solid 2px; */
+  /* outline-offset: 2px; */
 }
 
 .cta-btn--gallery {
