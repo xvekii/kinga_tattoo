@@ -149,6 +149,12 @@ header {
 
 }
 
+.nav-bottom-link1,
+.nav-bottom-link2 {
+    display: none;
+  }
+
+
 .small-logo-container {
   display: flex;
   align-items: center;
@@ -499,6 +505,11 @@ iframe {
     font-size: 1.1rem;
     line-height: 2rem;
     letter-spacing: 1.44px;
+  }
+
+  .nav-bottom-link1,
+  .nav-bottom-link2 {
+    display: block;
   }
 
   .nav-bottom-link1 {
