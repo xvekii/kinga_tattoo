@@ -130,11 +130,6 @@ header {
   margin: 0 0 0 2em;
 }
 
-.nav__menu-links {
-  list-style-type: none;
-  display: none;
-}
-
 .nav__link {
   text-decoration: none;
   color: #191B27;
@@ -506,9 +501,12 @@ iframe {
     letter-spacing: 1.44px;
   }
 
-  .nav__menu-links {
-    display: block;
-    padding: 2rem 0;
+  .nav-bottom-link1 {
+    padding-top: 1rem;
+  }
+
+  .nav-bottom-link2 {
+    padding-bottom: 1.3rem;
   }
 
   #modal[open] {
