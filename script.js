@@ -25,6 +25,7 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   document.body.classList.remove("active");
   smallLogo.classList.toggle("blocked");
   ctaMainContainer.classList.toggle("blocked");
+  gallery.classList.toggle("blocked");
 }));
 
 
