@@ -166,6 +166,10 @@ header {
   transition: opacity .4s ease-in-out; */
 }
 
+.small-logo-container.blocked {
+    pointer-events: none;
+}
+
 .main-logo {
   max-width: 30.500em;
   width: 100%;
