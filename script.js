@@ -9,9 +9,13 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
-  gallery.classList.toggle("blocked");
+  if(gallery) {
+    gallery.classList.toggle("blocked");
+  }
   smallLogo.classList.toggle("blocked");
+  if(ctaMainContainer) {
   ctaMainContainer.classList.toggle("blocked");
+  }
 });
 
 // Navigation
@@ -19,7 +23,6 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
-  gallery.classList.toggle("blocked");
   smallLogo.classList.toggle("blocked");
   ctaMainContainer.classList.toggle("blocked");
 }));
