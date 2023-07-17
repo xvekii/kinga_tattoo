@@ -1,6 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__menu");
 const gallery = document.getElementById("gallery");
+const smallLogo = document.querySelector(".small-logo-container");
+const ctaMainContainer = document.querySelector(".cta-btns-container-main");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
@@ -8,6 +10,8 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
   gallery.classList.toggle("blocked");
+  smallLogo.classList.toggle("blocked");
+  ctaMainContainer.classList.toggle("blocked");
 });
 
 // Navigation
@@ -16,6 +20,8 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
   gallery.classList.toggle("blocked");
+  smallLogo.classList.toggle("blocked");
+  ctaMainContainer.classList.toggle("blocked");
 }));
 
 

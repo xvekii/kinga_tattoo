@@ -216,6 +216,10 @@ header {
   /* border: 1px solid green; */
 }
 
+.cta-btns-container-main.blocked {
+  pointer-events: none;
+}
+
 .cta-btn {
   display: none;
   width: 210px;
