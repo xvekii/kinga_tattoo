@@ -473,6 +473,10 @@ iframe {
   .cta-btns-container-main {
     display: flex;
   }
+
+  #section {
+    padding-top: 0rem;
+  }
   
   .close-modal,
   .gallery-btn {
