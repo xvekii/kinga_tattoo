@@ -160,7 +160,7 @@ header {
   align-items: center;
   width: 3em;
   min-width: 2em;
-  pointer-events: all;
+  pointer-events: auto;
   /* try out for logo disappear on scroll */
   /* opacity: 1;
   transition: opacity .4s ease-in-out; */
