@@ -29,6 +29,11 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 }));
 
 
+document.body.addEventListener("click", function(e) {
+  console.log("target: ", e.target.classList);
+});
+
+
 // Go to gallery on click
 const sectionGallery = document.getElementById("section");
 const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
