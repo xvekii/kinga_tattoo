@@ -189,6 +189,9 @@ header {
 .hamburger {
   display: none;
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
+
   /* changed */
 }
 
@@ -503,11 +506,13 @@ iframe {
   h2, .contact-h2 {
     font-size: 1.6rem;
   }
+  
 
   .nav__link {
     font-size: 1.1rem;
     line-height: 2rem;
     letter-spacing: 1.44px;
+    visibility: hidden;
   }
 
   .nav-bottom-link1,
