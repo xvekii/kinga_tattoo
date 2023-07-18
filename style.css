@@ -256,7 +256,7 @@ header {
 }
 
 .cta-btn:focus-visible {
-  outline: 2px solid white;
+  outline: 1px solid white;
   outline-offset: 1px;
   border: 2px solid royalblue;
 }
