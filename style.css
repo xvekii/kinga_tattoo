@@ -359,10 +359,17 @@ header {
 
 .gallery-h2-div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   padding-bottom: 1rem;
-
 }
+
+.gallery-h2-div p {
+  margin: 0;
+  font-family: "Roboto Serif", sans-serif;
+}
+
 h2, .contact-h2 {
   margin: 0px;
   padding-bottom: .1rem;
