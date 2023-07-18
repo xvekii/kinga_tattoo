@@ -255,6 +255,12 @@ header {
   /* outline-offset: 2px; */
 }
 
+.cta-btn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 1px;
+  border: 2px solid royalblue;
+}
+
 .cta-btn--gallery {
   border-radius: 8px;
   background: #000;
