@@ -327,7 +327,7 @@ header {
 .gallery-btn {
   top: 50%;
   transform: translateY(-50%);
-  padding: .8rem .5rem;
+  padding: 1.8rem .7rem;
   color: white;
   line-height: 0;
   /* font-family: Verdana, sans-serif; */
@@ -338,11 +338,11 @@ header {
 }
 
 .gallery-btn.prev {
-  left: 1.68rem;
+  left: 2.68rem;
 }
 
 .gallery-btn.next {
-  right: 1.68rem;
+  right: 2.68rem;
 }
 
 .close-modal {
@@ -489,11 +489,11 @@ iframe {
   }
 
   .gallery-btn.prev {
-    left: 0.29rem;
+    left: 1rem;
   }
 
   .gallery-btn.next {
-    right: 0.29rem;
+    right: 1rem;
   }
   
   .close-modal {
