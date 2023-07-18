@@ -9,11 +9,11 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
-  if(gallery) {
+  if (gallery) {
     gallery.classList.toggle("blocked");
   }
   smallLogo.classList.toggle("blocked");
-  if(ctaMainContainer) {
+  if (ctaMainContainer) {
   ctaMainContainer.classList.toggle("blocked");
   }
 });
@@ -29,9 +29,9 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 }));
 
 
-document.body.addEventListener("click", function(e) {
-  console.log("target: ", e.target.classList);
-});
+// document.body.addEventListener("click", function(e) {
+//   console.log("target: ", e.target.classList);
+// });
 
 
 // Go to gallery on click
@@ -39,14 +39,14 @@ const sectionGallery = document.getElementById("section");
 const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
 
 
-if(goToGalleryBtn){
+if (goToGalleryBtn){
   goToGalleryBtn.addEventListener("click", () => {
     sectionGallery.scrollIntoView();
   });
 }
 
 const contactBtn = document.querySelector(".cta-btn--contact");
-if(contactBtn){
+if (contactBtn){
   contactBtn.addEventListener("click", () => {
     location.href = "contact.html";
   });
@@ -66,6 +66,7 @@ galleryImgs.forEach(function(e) {
     document.body.classList.toggle("active");
     imgChange(e);
     imgSlide(counter);
+    
   });
 });
 
@@ -73,7 +74,6 @@ function imgChange(e) {
   currentImage.src = e.src;
   currentImage.alt = e.alt;
   console.log("currentImgChange:", currentImage.src);
-  
   let currentImageAlt = currentImage.alt;
   prevImageNum = currentImageAlt.substring(6);
   counter = Number(prevImageNum);
@@ -99,21 +99,28 @@ function imgSlide(counter) {
     if (!btnAttr.includes("prev")) {
       if (counter < 80) {
       currentImage.src = "images/image" + `${counter + 1}` + ".jpg";
+      console.log("initial counterBtnChange:", counter);
       counter++;
+      console.log("initial counterBtnPost++:", counter);
       } else {
         counter = 0;
+        console.log("elseCounter++:", counter);
       }
     } else if (counter > 1) {
-        currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
-        counter--;
+      counter--;
+      currentImage.src = "images/image" + `${counter}` + ".jpg";
+      console.log("initial counterBtnChange:", counter);
+      
+      console.log("initial counterBtnPost--:", counter);
     } else {
       counter = 81;
+      console.log("elseCounter--:", counter);
     }
     });
   });
 }
 
-if(closeModalBtn){
+if (closeModalBtn){
   closeModalBtn.addEventListener("click", () => {
     modalCloseScrollOn();
     // gallery.style.pointerEvents = "auto";
@@ -121,7 +128,7 @@ if(closeModalBtn){
   });
 }
 
-if(modal) {
+if (modal) {
   modal.addEventListener("click", (e) => {
   if (e.target.nodeName === "DIALOG") {
     modalCloseScrollOn();
