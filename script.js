@@ -85,6 +85,8 @@ function imgChange(e) {
 
 const galleryButtons = document.querySelectorAll(".gallery-btn");
 
+let tempImage = currentImage.src;
+
 function imgSlide(counter) {
 
   // Buttons
@@ -103,6 +105,7 @@ function imgSlide(counter) {
       counter++;
       console.log("initial counterBtnPost++:", counter);
       } else {
+        currentImage.src = tempImage;
         counter = 0;
         console.log("elseCounter++:", counter);
       }
@@ -112,6 +115,7 @@ function imgSlide(counter) {
       counter--;
       console.log("initial counterBtnPost--:", counter);
     } else {
+      currentImage.src = tempImage;
       counter = 81;
       console.log("elseCounter--:", counter);
     }
