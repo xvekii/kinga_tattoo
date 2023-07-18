@@ -438,7 +438,7 @@ iframe {
 .footer__links-container {
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: 1.5rem;
   line-height: 0;
 }
 
