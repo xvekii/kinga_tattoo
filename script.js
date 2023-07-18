@@ -107,10 +107,9 @@ function imgSlide(counter) {
         console.log("elseCounter++:", counter);
       }
     } else if (counter > 1) {
-      counter--;
-      currentImage.src = "images/image" + `${counter}` + ".jpg";
+      currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
       console.log("initial counterBtnChange:", counter);
-      
+      counter--;
       console.log("initial counterBtnPost--:", counter);
     } else {
       counter = 81;
