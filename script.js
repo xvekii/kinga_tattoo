@@ -57,6 +57,10 @@ const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModalBtn = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
 
+if (!currentImage) {
+  currentImage = "";
+}
+
 let counter = 0;
 
 // Opening gallery images on click
@@ -66,7 +70,6 @@ galleryImgs.forEach(function(e) {
     document.body.classList.toggle("active");
     imgChange(e);
     imgSlide(counter);
-    
   });
 });
 
