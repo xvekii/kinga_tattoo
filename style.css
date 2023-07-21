@@ -39,6 +39,7 @@ body {
   margin: 0;
   background-color: #C8C8C9;
   line-height: 1.5;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 
 body.active {
