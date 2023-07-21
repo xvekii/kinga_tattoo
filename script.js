@@ -7,43 +7,31 @@ const footer = document.querySelector(".footer");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
-  
-  ctaMainContainer.toggleAttribute("inert");
-  gallery.toggleAttribute("inert");
-  footer.toggleAttribute("inert");
-
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
-  if (gallery) {
-    gallery.classList.toggle("blocked");
-  }
   smallLogo.classList.toggle("blocked");
   if (ctaMainContainer) {
-  ctaMainContainer.classList.toggle("blocked");
+    ctaMainContainer.toggleAttribute("inert");
   }
+  if (gallery) {
+    gallery.toggleAttribute("inert");
+  }
+  footer.toggleAttribute("inert");
 });
 
 // Navigation
 document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click", () => {
-  
-  ctaMainContainer.toggleAttribute("inert");
-  gallery.toggleAttribute("inert");
-  footer.toggleAttribute("inert");
-
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
-  smallLogo.classList.toggle("blocked");
-  ctaMainContainer.classList.toggle("blocked");
-  gallery.classList.toggle("blocked");
+  smallLogo.classList.remove("blocked");
+  ctaMainContainer.removeAttribute("inert");
+  gallery.removeAttribute("inert");
+  footer.removeAttribute("inert");
+  // ctaMainContainer.classList.toggle("blocked");
+  // gallery.classList.toggle("blocked");
 }));
-
-
-// document.body.addEventListener("click", function(e) {
-//   console.log("target: ", e.target.classList);
-// });
-
 
 // Go to gallery on click
 const sectionGallery = document.getElementById("section");
