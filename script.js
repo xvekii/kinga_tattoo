@@ -3,9 +3,15 @@ const navMenu = document.querySelector(".nav__menu");
 const gallery = document.getElementById("gallery");
 const smallLogo = document.querySelector(".small-logo-container");
 const ctaMainContainer = document.querySelector(".cta-btns-container-main");
+const footer = document.querySelector(".footer");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
+  
+  ctaMainContainer.toggleAttribute("inert");
+  gallery.toggleAttribute("inert");
+  footer.toggleAttribute("inert");
+
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
@@ -20,6 +26,11 @@ hamburger.addEventListener("click", () => {
 
 // Navigation
 document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click", () => {
+  
+  ctaMainContainer.toggleAttribute("inert");
+  gallery.toggleAttribute("inert");
+  footer.toggleAttribute("inert");
+
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
