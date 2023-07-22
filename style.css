@@ -228,7 +228,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  /* cursor: pointer; */
+  cursor: pointer;
   outline: 1px solid lightgray;
   outline-offset: -3px;
   /* transition: 500ms; */
@@ -485,6 +485,10 @@ iframe {
     display: flex;
   }
 
+  .cta-btn {
+    cursor: none;
+  }
+  
   #section {
     padding-top: 4rem;
   }
