@@ -4,6 +4,7 @@ const gallery = document.getElementById("gallery");
 const smallLogo = document.querySelector(".small-logo-container");
 const ctaMainContainer = document.querySelector(".cta-btns-container-main");
 const footer = document.querySelector(".footer");
+const mainContactWrapper = document.querySelector(".main-contact-wrapper");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
@@ -17,6 +18,9 @@ hamburger.addEventListener("click", () => {
   if (gallery) {
     gallery.toggleAttribute("inert");
   }
+  if (mainContactWrapper) {
+    mainContactWrapper.toggleAttribute("inert");
+  }
   footer.toggleAttribute("inert");
 });
 
@@ -28,6 +32,7 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   smallLogo.classList.remove("blocked");
   ctaMainContainer.removeAttribute("inert");
   gallery.removeAttribute("inert");
+  mainContactWrapper.removeAttribute("inert");
   footer.removeAttribute("inert");
   // ctaMainContainer.classList.toggle("blocked");
   // gallery.classList.toggle("blocked");

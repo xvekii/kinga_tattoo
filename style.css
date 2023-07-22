@@ -485,10 +485,6 @@ iframe {
     display: flex;
   }
 
-  .cta-btn {
-    cursor: none;
-  }
-  
   #section {
     padding-top: 4rem;
   }
