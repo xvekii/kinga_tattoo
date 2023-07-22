@@ -249,7 +249,7 @@ header {
 }
 
 .cta-btn:focus {
-  background: transparent;
+outline: none !important;
 }
 
 .cta-btn:focus-visible {
