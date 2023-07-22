@@ -188,8 +188,6 @@ header {
   cursor: pointer;
   border: 0;
   background-color: transparent;
-
-  /* changed */
 }
 
 .bar {
@@ -199,7 +197,6 @@ header {
   margin: 5px 0;
   transition: all 0.3s ease;
   background-color: black;
-  /* changed */
   border: 1px solid white;
 }
 
@@ -210,7 +207,6 @@ header {
   gap: 1.6rem;
   width: 210px;
   height: 129px;
-  /* border: 1px solid green; */
 }
 
 .cta-btn {
@@ -223,7 +219,7 @@ header {
   cursor: pointer;
   outline: 1px solid lightgray;
   outline-offset: -3px;
-  /* transition: 500ms; */
+
   /* typography */
   color: #000;
   text-align: center;
@@ -232,7 +228,6 @@ header {
   text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
   box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
   font-weight: 600;
-  font-variant: small-caps;
   letter-spacing: 1.44px;
 }
 
@@ -246,10 +241,6 @@ header {
   color: #ffffff;
   /* outline: white solid 2px; */
   /* outline-offset: 2px; */
-}
-
-.cta-btn:focus {
-outline: none !important;
 }
 
 .cta-btn:focus-visible {
