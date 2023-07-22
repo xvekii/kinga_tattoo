@@ -248,6 +248,9 @@ header {
   /* outline-offset: 2px; */
 }
 
+.cta-btn:focus {
+  background: transparent;
+}
 
 .cta-btn:focus-visible {
   outline: 1px solid white;
