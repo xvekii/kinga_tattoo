@@ -74,10 +74,6 @@ img {
   pointer-events: auto;
 }
 
-#gallery.blocked {
-  pointer-events: none;
-}
-
 .gallery-img {
   width: 230px;
   max-width: 28.9%;
@@ -215,10 +211,6 @@ header {
   width: 210px;
   height: 129px;
   /* border: 1px solid green; */
-}
-
-.cta-btns-container-main.blocked {
-  pointer-events: none;
 }
 
 .cta-btn {

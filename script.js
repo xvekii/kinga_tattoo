@@ -34,8 +34,6 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   gallery.removeAttribute("inert");
   mainContactWrapper.removeAttribute("inert");
   footer.removeAttribute("inert");
-  // ctaMainContainer.classList.toggle("blocked");
-  // gallery.classList.toggle("blocked");
 }));
 
 // Go to gallery on click
