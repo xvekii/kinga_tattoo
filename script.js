@@ -1,3 +1,7 @@
+const KEYCODE_TAB = 9;
+const KEYCODE_ESC = 27;
+const KEYCODE_ENTER = 12;
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__menu");
 const gallery = document.getElementById("gallery");
@@ -8,6 +12,25 @@ const mainContactWrapper = document.querySelector(".main-contact-wrapper");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
+  
+  let focusableEls = document.querySelectorAll(".nav__menu");
+  let firstFocusableEl = focusableEls[0];
+  let lastFocusableEl = focusableEls[focusableEls.length - 1];
+
+  console.log("first focus:", firstFocusableEl);
+
+  navMenu.addEventListener("keydown", function(e) {
+    let isTabPressed = (e.key === "Tab" || e.code === KEYCODE_TAB);
+
+    if(isTabPressed) {
+      if(document.activeElement === firstFocusableEl) {
+        firstFocusableEl.focus();
+      }
+    }
+  })
+
+  // navMenu.focus();
+  
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");

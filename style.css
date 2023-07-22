@@ -535,6 +535,7 @@ iframe {
   
   .hamburger {
     display: block; 
+    z-index: 1;
   }
   
   .hamburger.active .bar:nth-child(2) {
