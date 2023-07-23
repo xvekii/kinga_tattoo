@@ -15,30 +15,31 @@ const mainWrapper = document.querySelector(".main-wrapper");
 hamburger.addEventListener("click", () => {
   
   let focusableEls = navMenu.getElementsByTagName("a");
-  let firstFocusableEl = focusableEls[0];
+  let firstFocus = document.querySelector(".hamburger")
+  console.log("FF: ", firstFocus);
+  // let firstFocusableEl = focusableEls[0];
   let lastFocusableEl = focusableEls[focusableEls.length - 1];
 
-  console.log("first focus:", firstFocusableEl);
-  console.log("last focus:", lastFocusableEl);
-  console.log("focusableEls:", focusableEls);
-  // navMenu.setAttribute("aria-modal", "true");
-  // navMenu.setAttribute("tabindex", "0");
+  // console.log("first focus:", firstFocusableEl);
+  // console.log("last focus:", lastFocusableEl);
+  // console.log("focusableEls:", focusableEls);
+  navMenu.setAttribute("aria-modal", "true");
 
   navMenu.addEventListener("keydown", function(e) {
     let isTabPressed = (e.key === "Tab" || e.code === KEYCODE_TAB);
-    
+    console.log(e);
     if (!isTabPressed) { 
       return; 
     }
 
-    if ( e.shiftKey ) /* shift + tab */ {
-      if (document.activeElement === firstFocusableEl) {
+    if (e.shiftKey) /* shift + tab */ {
+      if (document.activeElement === firstFocus) {
         lastFocusableEl.focus();
           e.preventDefault();
         }
       } else /* tab */ {
       if (document.activeElement === lastFocusableEl) {
-        firstFocusableEl.focus();
+        firstFocus.focus();
           e.preventDefault();
         }
       }
@@ -47,7 +48,7 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("active");
-  smallLogo.classList.toggle("blocked");
+  smallLogo.toggleAttribute("inert");
   if (ctaMainContainer) {
     ctaMainContainer.toggleAttribute("inert");
   }
@@ -65,7 +66,7 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("active");
-  smallLogo.classList.remove("blocked");
+  smallLogo.removeAttribute("inert");
   ctaMainContainer.removeAttribute("inert");
   gallery.removeAttribute("inert");
   if (mainContactWrapper) {
