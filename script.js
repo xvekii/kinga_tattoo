@@ -9,27 +9,40 @@ const smallLogo = document.querySelector(".small-logo-container");
 const ctaMainContainer = document.querySelector(".cta-btns-container-main");
 const footer = document.querySelector(".footer");
 const mainContactWrapper = document.querySelector(".main-contact-wrapper");
+const mainWrapper = document.querySelector(".main-wrapper");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
   
-  let focusableEls = document.querySelectorAll(".nav__menu");
+  let focusableEls = navMenu.getElementsByTagName("a");
   let firstFocusableEl = focusableEls[0];
   let lastFocusableEl = focusableEls[focusableEls.length - 1];
 
   console.log("first focus:", firstFocusableEl);
+  console.log("last focus:", lastFocusableEl);
+  console.log("focusableEls:", focusableEls);
+  // navMenu.setAttribute("aria-modal", "true");
+  // navMenu.setAttribute("tabindex", "0");
 
   navMenu.addEventListener("keydown", function(e) {
     let isTabPressed = (e.key === "Tab" || e.code === KEYCODE_TAB);
-
-    if(isTabPressed) {
-      if(document.activeElement === firstFocusableEl) {
-        firstFocusableEl.focus();
-      }
+    
+    if (!isTabPressed) { 
+      return; 
     }
-  })
 
-  // navMenu.focus();
+    if ( e.shiftKey ) /* shift + tab */ {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } else /* tab */ {
+      if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+  });
   
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
