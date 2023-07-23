@@ -68,7 +68,9 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
   smallLogo.classList.remove("blocked");
   ctaMainContainer.removeAttribute("inert");
   gallery.removeAttribute("inert");
-  mainContactWrapper.removeAttribute("inert");
+  if (mainContactWrapper) {
+    mainContactWrapper.removeAttribute("inert");
+  }
   footer.removeAttribute("inert");
 }));
 
