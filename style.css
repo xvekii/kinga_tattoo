@@ -594,7 +594,7 @@ iframe {
   }
 
   .nav__menu.active {
-    min-height: 80%;
+    min-height: 95%;
     max-width: 30%;
   }
 }
