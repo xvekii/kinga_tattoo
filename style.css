@@ -583,6 +583,22 @@ iframe {
   }
 }
 
+@media screen and (orientation: landscape) {
+
+  .nav__link {
+    font-size: 1rem;
+  } 
+
+  .nav__item {
+    margin: .2rem;
+  }
+
+  .nav__menu.active {
+    min-height: 80%;
+    max-width: 30%;
+  }
+}
+
 /* don't forget to add #gallery and fixed menu! 
 main logo padding 100px to em?
 after click on menu to return button animation!!!
