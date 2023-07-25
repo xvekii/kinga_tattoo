@@ -30,6 +30,7 @@ select {
 
 html {
   scroll-behavior: smooth;
+  /* margin-left: calc(100vw - 100%); */
 }
 
 body {
@@ -40,6 +41,7 @@ body {
   background-color: #C8C8C9;
   line-height: 1.5;
   margin-right: calc(-1 * (100vw - 100%));
+  overflow-x: hidden;
 }
 
 body.active {
@@ -578,9 +580,9 @@ iframe {
     visibility: visible;
   }
   
-  body.active {
+  /* body.active {
     overflow: hidden;
-  }
+  } */
 }
 
 @media screen and (orientation: landscape) {
