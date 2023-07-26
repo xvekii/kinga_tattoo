@@ -30,7 +30,7 @@ select {
 
 html {
   scroll-behavior: smooth;
-  /* margin-left: calc(100vw - 100%); */
+  /* margin-left: calc(100vw - 100%); */ 
 }
 
 body {
