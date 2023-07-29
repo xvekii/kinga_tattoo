@@ -173,8 +173,9 @@ header {
   flex-direction: column;
   gap: 2em;
   /* changed bottom padding from 1 to 4 */
-  padding: 0 1em 4em 1em;
-  padding-top: 100px;
+  /* padding: 0 1em 4em 1em; */
+  padding: 5rem 1rem 5rem 1rem;
+  /* padding-top: 100px; */
   /* border: 1px solid green; */
 }
 
