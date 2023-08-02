@@ -213,7 +213,9 @@ header {
   cursor: pointer;
   outline: 1px solid lightgray;
   outline-offset: -3px;
-
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  
   /* typography */
   color: #000;
   text-align: center;
@@ -223,6 +225,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
   font-weight: 600;
   letter-spacing: 1.44px;
+  user-select: none;
 }
 
 .cta-btn--contact {
@@ -467,10 +470,6 @@ iframe {
   .cta-btn,
   .cta-btns-container-main {
     display: flex;
-  }
-
-  .cta-btn {
-    cursor: none;
   }
   
   #section {
