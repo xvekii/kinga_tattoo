@@ -10,6 +10,14 @@ const ctaMainContainer = document.querySelector(".cta-btns-container-main");
 const footer = document.querySelector(".footer");
 const mainContactWrapper = document.querySelector(".main-contact-wrapper");
 const mainWrapper = document.querySelector(".main-wrapper");
+const galleryButtons = document.querySelectorAll(".gallery-btn");
+const modal = document.querySelector("#modal");
+const galleryImgs = document.querySelectorAll(".gallery-img");
+const closeModalBtn = document.querySelector(".close-modal");
+let currentImage = document.getElementById("current-image");
+const imagesArr = Array.from(galleryImgs, (image) => image.src);
+const sectionGallery = document.getElementById("section");
+const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
 
 // Hamburger
 hamburger.addEventListener("click", () => {
@@ -20,9 +28,6 @@ hamburger.addEventListener("click", () => {
   // let firstFocusableEl = focusableEls[0];
   let lastFocusableEl = focusableEls[focusableEls.length - 1];
 
-  // console.log("first focus:", firstFocusableEl);
-  // console.log("last focus:", lastFocusableEl);
-  // console.log("focusableEls:", focusableEls);
   navMenu.setAttribute("aria-modal", "true");
 
   navMenu.addEventListener("keydown", function(e) {
@@ -76,10 +81,6 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener("click",
 }));
 
 // Go to gallery on click
-const sectionGallery = document.getElementById("section");
-const goToGalleryBtn = document.querySelector(".cta-btn--gallery");
-
-
 if (goToGalleryBtn){
   goToGalleryBtn.addEventListener("click", () => {
     sectionGallery.scrollIntoView();
@@ -93,11 +94,6 @@ if (contactBtn){
   });
 }
 
-const modal = document.querySelector("#modal");
-const galleryImgs = document.querySelectorAll(".gallery-img");
-const closeModalBtn = document.querySelector(".close-modal");
-let currentImage = document.getElementById("current-image");
-const imagesArr = Array.from(galleryImgs, (image) => image.src);
 
 if (!currentImage) {
   currentImage = "";
@@ -118,10 +114,6 @@ function imgChange(e) {
   currentImage.src = e.src;
   counter = imagesArr.indexOf(currentImage.src);
 };
-
-const galleryButtons = document.querySelectorAll(".gallery-btn");
-
-// function imgSlide() {
 
   // Buttons
   galleryButtons.forEach(function(button) {
@@ -149,7 +141,6 @@ const galleryButtons = document.querySelectorAll(".gallery-btn");
     }
     });
   });
-// }
 
 if (closeModalBtn){
   closeModalBtn.addEventListener("click", () => {
