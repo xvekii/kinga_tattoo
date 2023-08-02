@@ -45,6 +45,7 @@ body.active {
 
 img {
   max-width: 100%;
+  user-select: none;
 }
 
 .wide-img {
