@@ -124,7 +124,7 @@ const galleryButtons = document.querySelectorAll(".gallery-btn");
 
 let tempImage = currentImage.src;
 
-function imgSlide(counter) {
+function imgSlide() {
 
   // Buttons
   galleryButtons.forEach(function(button) {
@@ -136,15 +136,12 @@ function imgSlide(counter) {
     // Button clicked check
     // Right btn clicked (next)
     if (!btnAttr.includes("prev")) {
-      if (counter < 80) {
-      currentImage.src = "images/image" + `${counter + 1}` + ".jpg";
-      console.log("initial counterBtnChange:", counter);
-      counter++;
-      console.log("initial counterBtnPost++:", counter);
+      if (counter < imagesArr.length - 1) {
+        counter++;
+        currentImage.src = imagesArr[counter];
       } else {
-        currentImage.src = tempImage;
         counter = 0;
-        console.log("elseCounter++:", counter);
+        currentImage.src = imagesArr[0];
       }
     } else if (counter > 1) {
       currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
