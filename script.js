@@ -117,15 +117,7 @@ galleryImgs.forEach(function(e) {
 
 function imgChange(e) {
   currentImage.src = e.src;
-  currentImage.alt = e.alt;
-  console.log("currentImgChange:", currentImage.src);
-  let currentImageAlt = currentImage.alt;
-  prevImageNum = currentImageAlt.substring(6);
-  counter = Number(prevImageNum);
-  
-  console.log("counterImgChange:", counter);
-
-  return counter;
+  counter = imagesArr.indexOf(currentImage.src);
 };
 
 const galleryButtons = document.querySelectorAll(".gallery-btn");
