@@ -111,7 +111,6 @@ galleryImgs.forEach(function(e) {
     modal.showModal();
     document.body.classList.toggle("active");
     imgChange(e);
-    imgSlide(counter);
   });
 });
 
@@ -122,9 +121,7 @@ function imgChange(e) {
 
 const galleryButtons = document.querySelectorAll(".gallery-btn");
 
-let tempImage = currentImage.src;
-
-function imgSlide() {
+// function imgSlide() {
 
   // Buttons
   galleryButtons.forEach(function(button) {
@@ -143,19 +140,16 @@ function imgSlide() {
         counter = 0;
         currentImage.src = imagesArr[0];
       }
-    } else if (counter > 1) {
-      currentImage.src = "images/image" + `${counter - 1}` + ".jpg";
-      console.log("initial counterBtnChange:", counter);
+    } else if (counter > 0) {
       counter--;
-      console.log("initial counterBtnPost--:", counter);
+      currentImage.src = imagesArr[counter];
     } else {
-      currentImage.src = tempImage;
-      counter = 81;
-      console.log("elseCounter--:", counter);
+      counter = imagesArr.length - 1;
+      currentImage.src = imagesArr[counter];
     }
     });
   });
-}
+// }
 
 if (closeModalBtn){
   closeModalBtn.addEventListener("click", () => {
