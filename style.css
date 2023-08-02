@@ -261,6 +261,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: black;
+  overflow-y: hidden;
 }
 
 #modal::backdrop {
