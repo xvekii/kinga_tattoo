@@ -215,7 +215,7 @@ header {
   outline-offset: -3px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
-  
+
   /* typography */
   color: #000;
   text-align: center;
@@ -236,8 +236,8 @@ header {
 .cta-btn--contact:active {
   background: #899299;
   color: #ffffff;
-  /* outline: white solid 2px; */
-  /* outline-offset: 2px; */
+  outline: rgb(73, 69, 69) solid 2px;
+  outline-offset: 2px;
 }
 
 .cta-btn:focus-visible {
@@ -255,6 +255,8 @@ header {
 .cta-btn--gallery:active {
   background: #899299;
   color: #000;
+  outline: rgb(73, 69, 69) solid 2px;
+  outline-offset: 2px;
 }
 
 #modal[open] {
