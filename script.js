@@ -97,6 +97,7 @@ const modal = document.querySelector("#modal");
 const galleryImgs = document.querySelectorAll(".gallery-img");
 const closeModalBtn = document.querySelector(".close-modal");
 let currentImage = document.getElementById("current-image");
+const imagesArr = Array.from(galleryImgs, (image) => image.src);
 
 if (!currentImage) {
   currentImage = "";
