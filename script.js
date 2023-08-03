@@ -118,9 +118,11 @@ galleryImgs.forEach(function(e) {
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
+    if (!navMenu.classList.contains("active")) {
     modalCloseScrollOn();
+    }
   }
-})
+});
 
 
 function imgChange(e) {
