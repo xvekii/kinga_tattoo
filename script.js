@@ -32,7 +32,7 @@ hamburger.addEventListener("click", () => {
 
   navMenu.addEventListener("keydown", function(e) {
     let isTabPressed = (e.key === "Tab" || e.code === KEYCODE_TAB);
-    console.log(e);
+    
     if (!isTabPressed) { 
       return; 
     }
@@ -108,7 +108,20 @@ galleryImgs.forEach(function(e) {
     document.body.classList.toggle("active");
     imgChange(e);
   });
+  e.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      modal.showModal();
+      document.body.classList.toggle("active");
+    }
+  });
 });
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modalCloseScrollOn();
+  }
+})
+
 
 function imgChange(e) {
   currentImage.src = e.src;
