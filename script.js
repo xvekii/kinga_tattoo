@@ -25,7 +25,6 @@ hamburger.addEventListener("click", () => {
   let focusableEls = navMenu.getElementsByTagName("a");
   let firstFocus = document.querySelector(".hamburger")
   console.log("FF: ", firstFocus);
-  // let firstFocusableEl = focusableEls[0];
   let lastFocusableEl = focusableEls[focusableEls.length - 1];
 
   navMenu.setAttribute("aria-modal", "true");
@@ -160,7 +159,6 @@ function imgChange(e) {
 if (closeModalBtn){
   closeModalBtn.addEventListener("click", () => {
     modalCloseScrollOn();
-    // gallery.style.pointerEvents = "auto";
     modal.close();
   });
 }
