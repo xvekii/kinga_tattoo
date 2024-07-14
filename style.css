@@ -404,7 +404,9 @@ iframe {
   
   .main-logo {
     max-width: 40.500em;
+    padding: 6rem 1rem 5rem 1rem;
   } 
+  
   .nav__link {
     font-size: 1.6rem;
   } 
