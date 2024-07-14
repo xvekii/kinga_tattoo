@@ -11,21 +11,12 @@
   box-sizing: border-box;
 }
 
-/* input,
-button,
-textarea,
-select {
-  font: inherit;
-} */
-
 html {
   scroll-behavior: smooth;
-  /* margin-left: calc(100vw - 100%); */ 
 }
 
 body {
   position: relative;
-  /* font-family: 'Roboto Mono', sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   background-color: #C8C8C9;
@@ -40,7 +31,6 @@ body.active {
 
 .main-wrapper {
   min-height: 100vh;
-  /* min-height: 100dvh; */
 }
 
 img {
@@ -60,7 +50,6 @@ img {
 }
 
 #gallery {
-  /* padding-top: 7em; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -81,22 +70,10 @@ header {
   background-color: #c9c8c8f5;
 }
 
-/* test header */
-/* header {
-  position: fixed;
-  padding-top: 6px;
-  padding-right: 6px;
-  padding-left: 6px;
-  padding-bottom: 6px;
-  background: rgb(255 255 255 / 64%);
-  width: 100%;
-} */
-
 .container {
   width: 96%; 
   max-width: 1200px;
   margin: 0 auto;
-  /* border: solid black 1px; */
 }
 
 .container--flex {
@@ -108,7 +85,6 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border: 1px solid green; */
 }
 
 .nav__menu {
@@ -123,18 +99,14 @@ header {
   text-decoration: none;
   color: #191B27;
   font-size: 1rem;
-  /* line-height: 2.638em; */
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
-  /* -webkit-text-stroke: 1px rgb(255 255 255 / 53%); */
   font-weight: 500;
-  /* text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px; */
 }
 
 .nav__link:hover, 
 .nav__link:focus {
   text-decoration: underline;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-  /* -webkit-text-stroke: 1px rgba(255, 255, 255, 63%); */
 }
 
 .nav-bottom-link1,
@@ -148,9 +120,6 @@ header {
   width: 3em;
   min-width: 2em;
   pointer-events: all;
-  /* try out for logo disappear on scroll */
-  /* opacity: 1;
-  transition: opacity .4s ease-in-out; */
 }
 
 .small-logo-container.blocked {
@@ -163,15 +132,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  /* changed bottom padding from 1 to 4 */
-  /* padding: 0 1em 4em 1em; */
   padding: 5rem 1rem 5rem 1rem;
-  /* padding-top: 100px; */
-  /* border: 1px solid green; */
 }
 
 #section {
-  /* background-color: rgba(12, 7, 7, 0.275); */
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(200,200,201,1) 89%);
   padding-top: 6rem;
@@ -262,7 +226,6 @@ header {
 #modal[open] {
   padding: 1.5em;
   width: 40%;
-  /* height: 60vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,7 +277,6 @@ header {
   padding: 1.8rem .7rem;
   color: white;
   line-height: 0;
-  /* font-family: Verdana, sans-serif; */
 }
 
 .gallery-btns-paths {
@@ -344,7 +306,6 @@ header {
 .gallery-h2-div {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding-bottom: 1rem;
 }
@@ -360,8 +321,6 @@ h2, .contact-h2 {
   font-size: 1.8rem;
   text-decoration: underline;
   text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 0px;
-  /* text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
-  /* -webkit-text-stroke: 1px rgb(255 255 255 / 81%); */
   font-weight: 600;
   font-family: "Roboto Serif", sans-serif;
   letter-spacing: .1em;
@@ -434,7 +393,6 @@ iframe {
 }
 
 
-/* was 1128, 100% */
 @media (min-width: 1200px) {
   .container {
     width: 92%;
@@ -454,7 +412,6 @@ iframe {
 
 
 /* smaller devices */
-
 @media(max-width: 481px) {
 
   .gallery-img {
@@ -468,7 +425,6 @@ iframe {
     padding: 5.5rem 1rem 5rem 1rem;
   }
   
-  
   .cta-btn,
   .cta-btns-container-main {
     display: flex;
@@ -480,10 +436,8 @@ iframe {
   
   .close-modal,
   .gallery-btn {
-  /* padding-bottom: 1px; */
   vertical-align: middle;
   }
-
 
   .gallery-btn.prev {
     left: 1rem;
@@ -511,7 +465,6 @@ iframe {
     font-size: 1.6rem;
   }
   
-
   .nav__link {
     font-size: 1.1rem;
     line-height: 2rem;
@@ -580,14 +533,9 @@ iframe {
     box-shadow: 6px 6px 6px black;
     visibility: visible;
   }
-  
-  /* body.active {
-    overflow: hidden;
-  } */
 }
 
 @media screen and (orientation: landscape) {
-
   .nav__link {
     font-size: 1rem;
   } 
@@ -601,10 +549,3 @@ iframe {
     max-width: 30%;
   }
 }
-
-/* don't forget to add #gallery and fixed menu! 
-main logo padding 100px to em?
-after click on menu to return button animation!!!
-check if you can remove background flashes after clicking
-add CTA button for mobile in @media
-*/
